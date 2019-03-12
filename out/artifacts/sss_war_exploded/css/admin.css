@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+.layout td {
+    padding: 0;
+}
+
+.menu {
+    width: 200px;
+    vertical-align: top;
+    background-color: blue;
+}
+
+.menu div {
+    border-bottom: 1px solid #abc0cc;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 100%;
+}
+
+.menu div a{
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.menu div:hover {
+    background-color: #f0ff1a;
+}
+
+.header {
+    background-color: #28b3ff;
+    text-align: right;
+}

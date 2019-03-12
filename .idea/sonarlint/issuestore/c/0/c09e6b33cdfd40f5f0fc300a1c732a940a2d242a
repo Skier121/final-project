@@ -1,0 +1,11 @@
+
+nsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ó¼þ×øÿÿÿÿ8êÎíŒ-
+asquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(‘¨©g
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(äÃÎâ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(…Óšþ
+©%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from constructor's body.(Ìš¡¯ûÿÿÿÿ
+U
+squid:S899.":Do something with the "boolean" value returned by "offer".(‡ÊŽ‚øÿÿÿÿ
+^squid:UselessImportCheck"3Remove this unused import 'java.sql.DriverManager'.(“£°8Ç¢‚Œ-
+dsquid:S2142&"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÖåèŒ-
