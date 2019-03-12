@@ -29,6 +29,5 @@ public class JsonServlet extends HttpServlet {
         response.setContentType("application/json");
         JsonCommand jsonCommand = requestHelper.getCommand(request);
         jsonCommand.execute(request, response);
-        System.out.println(request.getSession().getAttribute("locale"));
     }
 }

@@ -20,7 +20,6 @@ public class CreateClasCommand implements JsonCommand {
         String result = "";
         try {
             createResult = ClasService.createClas(
-                    Long.parseLong(request.getParameter("clasId")),
                     request.getParameter("clasName"));
             if (createResult) {
                 result = "{\"result\": \"success!\"}";

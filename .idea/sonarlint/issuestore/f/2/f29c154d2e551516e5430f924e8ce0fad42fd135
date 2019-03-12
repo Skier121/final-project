@@ -1,4 +1,4 @@
 
-msquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(ÍÅÃ
-bsquid:S1192+"KDefine a constant instead of duplicating this literal "/index.jsp" 3 times.(¹ú·
-bsquid:S1192,"KDefine a constant instead of duplicating this literal "wrong_data" 4 times.(ë¦·ü
+xsquid:S1450"URemove the "locale" field and declare it as a local variable in the relevant methods.(şÎ¸Ìùÿÿÿÿ8Öü¥•-
+ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(·şšïÿÿÿÿÿ8Öü¥•-
+{squid:S1450"]Remove the "resourceBundle" field and declare it as a local variable in the relevant methods.(¨“É‘8Ş”›¹–-

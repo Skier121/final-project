@@ -1,0 +1,7 @@
+
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8óØ“•-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(‡èú×8óØ“•-
+ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(çĞ‘²ùÿÿÿÿ8óØ“•-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÕõËˆüÿÿÿÿ8óØ“•-
+vsquid:S3008"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çĞ‘²ùÿÿÿÿ8óØ“•-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(ç°½ñ8óØ“•-

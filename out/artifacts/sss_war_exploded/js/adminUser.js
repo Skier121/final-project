@@ -74,9 +74,8 @@ $(document).ready(() => {
                 $("#phone").val("");
                 $("#address").val("");
                 $("#role").val("")
-                $("#addNewUser").val("Create");
+                $("#addNewUser").val("Add new user");
 
-                $form2.text("");
                 console.log("showUsers")
                 showUsers();
             }
@@ -84,7 +83,7 @@ $(document).ready(() => {
     };
 
     $("#createUser").on("submit", (e) => {
-        console.log("createUser1111")
+        console.log("createUser")
         e.stopPropagation();
         createOrUpadateUser();
         return false;

@@ -27,14 +27,16 @@
     </tr>
     <tr>
         <td class="menu">
-            <div><a href="/test/controller?command=classes">
-                <fmt:message key="admin.classes.form" bundle="${page_content}"/>
-                </a>
-            </div>
-            <div><a href="/test/controller?command=subjectAndTeacher">
-                <fmt:message key="admin.link.subjectAndTeacher" bundle="${page_content}"/>
-                </a>
-            </div>
+            <form id="toClasses">
+                <input type="hidden" name="command" value="classes"/>
+                <input type="submit" value="<fmt:message key="admin.classes.form" bundle="${page_content}"/> "
+                       formmethod="post" formaction="controller">
+            </form>
+            <form id="toSubjects" >
+                <input type="hidden" name="command" value="subjectAndTeacher"/>
+                <input type="submit" value="<fmt:message key="admin.subjects.form" bundle="${page_content}"/> "
+                       formmethod="post" formaction="controller">
+            </form>
         </td>
         <td class="main">
             <b><fmt:message key="admin.user.form" bundle="${page_content}"/></b>

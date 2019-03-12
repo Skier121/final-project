@@ -22,12 +22,12 @@ public class ClasService {
         return clas;
     }
 
-    public static boolean createClas(long clasId, String clasName)
+    public static boolean createClas(String clasName)
             throws ServiceException{
         boolean result=false;
         ClassDaoImpl clasDao =new ClassDaoImpl();
         try {
-            result=clasDao.create(new Clas(0, clasName));
+            result=clasDao.create(new Clas(clasName));
         }catch (DaoException e){
             throw new ServiceException(e);
         }

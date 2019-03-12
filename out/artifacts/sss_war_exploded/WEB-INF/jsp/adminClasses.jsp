@@ -20,7 +20,7 @@
 <fmt:setLocale value="${sessionScope.get('locale')}" scope="session"/>
 <table class="layout">
     <tr>
-        <td colspan="2" class="header">
+        <td colspan="3" class="header">
             <%@include file="/header/header.jsp" %>
         </td>
     </tr>
@@ -35,64 +35,68 @@
                 </a>
             </div>
         </td>
-        <td class="mainClass">
-            <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>
-            <form id="formCreateClass" style="background-color: #b6ffae">
-                <input type="hidden" id="class-action" name="action" value="createClass">
-                <input type="hidden" id="classId" name="classId" value="">
-                <br>
-                <%@ include file="/form/classForm.jsp" %>
-                <br>
-                <div id="class_result"></div>
-                <br/>
-                <div class="error" style="color: red;">
+        <td class="classAndTeacher">
+            <table class="cas">
+                <td class="mainClass">
+                    <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>
+                    <form id="formCreateClas" style="background-color: #b6ffae">
+                        <input type="hidden" id="clas-action" name="action" value="createClas">
+                        <input type="hidden" id="clasId" name="clasId" value="">
+                        <br>
+                        <%@ include file="/form/classForm.jsp" %>
+                        <br>
+                        <div id="clas_result"></div>
+                        <br/>
+                        <div class="error" style="color: red;">
 
-                </div>
-                <input id="addNewClass" type="submit"
-                       value="<fmt:message key="admin.classes.button.addNew" bundle="${page_content}"/>"/>
-            </form>
+                        </div>
+                        <input id="addNewClas" type="submit"
+                               value="<fmt:message key="admin.classes.button.addNew" bundle="${page_content}"/>"/>
+                    </form>
 
-            <table id="classes">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th><fmt:message key="admin.classtable.class" bundle="${page_content}"/></th>
-                </tr>
-                </thead>
-                <tbody>
+                    <table id="classes">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th><fmt:message key="admin.classtable.class" bundle="${page_content}"/></th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
-                </tbody>
-            </table>
-        </td>
+                        </tbody>
+                    </table>
+                </td>
 
-        <td class="mainPupil">
-            <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>
-            <form id="addPupilToClass" style="background-color: #b6ffae">
-                <input type="hidden" id="class-action" name="action" value="addPupilToClass">
-                <input type="hidden" id="classId" name="classId" value="">
-                <br>
-                <%@ include file="/form/pupilForm.jsp" %>
-                <br>
-                <div id="pupil_result"></div>
-                <br/>
-                <div class="error" style="color: red;">
+                <td class="mainPupil">
+                    <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>
+                    <form id="addPupilToClass" style="background-color: #b6ffae">
+                        <input type="hidden" id="class-action" name="action" value="addPupilToClass">
+                        <input type="hidden" id="classId" name="classId" value="">
+                        <br>
+                        <%@ include file="/form/pupilForm.jsp" %>
+                        <br>
+                        <div id="pupil_result"></div>
+                        <br/>
+                        <div class="error" style="color: red;">
 
-                </div>
-                <input id="addPupil" type="submit"
-                       value="<fmt:message key="admin.classes.addPupil" bundle="${page_content}"/>"/>
-            </form>
-            <table id="pupils">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th><fmt:message key="admin.class.pupiltable.firstName" bundle="${page_content}"/></th>
-                    <th><fmt:message key="admin.class.pupiltable.lastName" bundle="${page_content}"/></th>
-                    <th><fmt:message key="admin.class.pupiltable.email" bundle="${page_content}"/></th>
-                </tr>
-                </thead>
-                <tbody>
+                        </div>
+                        <input id="addPupil" type="submit"
+                               value="<fmt:message key="admin.classes.addPupil" bundle="${page_content}"/>"/>
+                    </form>
+                    <table id="pupils">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th><fmt:message key="admin.class.pupiltable.firstName" bundle="${page_content}"/></th>
+                            <th><fmt:message key="admin.class.pupiltable.lastName" bundle="${page_content}"/></th>
+                            <th><fmt:message key="admin.class.pupiltable.email" bundle="${page_content}"/></th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
-                </tbody>
+                        </tbody>
+                    </table>
+                </td>
             </table>
         </td>
     </tr>

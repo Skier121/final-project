@@ -26,8 +26,8 @@ public class Clas extends Entity implements Serializable {
     @Override
     public String toString() {
         return "{" +
-                "  \"classId\":" + id +
-                ", \"className\":\"" + name + "\"" +
+                "  \"clasId\":" + id +
+                ", \"clasName\":\"" + name + "\"" +
                 '}';
     }
 }

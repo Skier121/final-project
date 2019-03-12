@@ -24,6 +24,10 @@ public class JsonRequestHelper {
         commands.put("updateUser", new UpdateUserCommand());
         commands.put("setRu", new SetLocaleRuCommand());
         commands.put("setEn", new SetLocaleEnCommand());
+        commands.put("createClas", new CreateClasCommand());
+        commands.put("findAllClas", new FindAllClasCommand());
+        commands.put("deleteClas", new DeleteClasCommand());
+        commands.put("updateClas", new UpdateClasCommand());
     }
 
     public JsonCommand getCommand(HttpServletRequest request) {

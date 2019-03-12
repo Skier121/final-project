@@ -1,10 +1,10 @@
 $(document).ready(() => {
-    const deleteClass = (classId)=>{
+    const deleteClass = (clasId)=>{
         if (confirm("Really?")) {
             $.ajax({
                 url: "/test/json",
                 method: "GET",
-                data: {action: "deleteClass", classId: classId},
+                data: {action: "deleteClas", clasId: clasId},
             }).then((resp) => {
                 showClasses();
             });
@@ -18,25 +18,25 @@ $(document).ready(() => {
         $.ajax({
             url: "/test/json",
             method: "GET",
-            data: {action: "findAllClasses"},
+            data: {action: "findAllClas"},
         }).then((resp) => {
             $.each(resp, (i, clas) => {
                 const tr = $("<tr></tr>");
                 const deleteButton = $("<input type='button' value='delete'/>");
                 deleteButton.on("click", ()=>{
-                    deleteClass(clas.classId)
+                    deleteClass(clas.clasId)
                 });
                 const tdDelete = $("<td></td>").append(deleteButton);
                 const updateButton = $("<input type='button' value='edit'/>");
                 updateButton.on("click", ()=>{
-                    $("#class-action").val("updateClass");
-                    $("#classId").val(clas.classId);
-                    $("#className").val(clas.className);
-                    $("#addNewUser").val("update " + user.email);
+                    $("#clas-action").val("updateClas");
+                    $("#clasId").val(clas.clasId);
+                    $("#clasName").val(clas.clasName);
+                    $("#addNewClas").val("Update class");
                 });
                 const tdupdate = $("<td></td>").append(updateButton);
-                tr.append(`<td>${clas.classId}</td>`);
-                tr.append(`<td>${user.className}</td>`);
+                tr.append(`<td>${clas.clasId}</td>`);
+                tr.append(`<td>${clas.clasName}</td>`);
                 tr.append(updateButton);
                 tr.append(tdDelete);
                 $table.append(tr)
@@ -44,33 +44,32 @@ $(document).ready(() => {
         });
     };
     showClasses();
-    const createOrUpadateClass = ()=>{
+    const createOrUpadateClas = ()=>{
         $.ajax({
             url: "/test/json",
             method: "POST",
-            data: $("#createClass").serialize(),
+            data: $("#formCreateClas").serialize(),
         }).then((resp) => {
-            var $formCreateClass = $("#createClass .error");
-            $formCreateClass.text(resp.result);
+            var $form2 = $("#formCreateClass .error");
+            $form2.text(resp.result);
             if (resp.error) {
-                $formCreateClass.text(resp.error);
+                $form2.text(resp.error);
             } else {
-                $("#class-action").val("createClass");
-                $("#classId").val("");
-                $("#className").val("");
-                $("#addNewClass").val("Create");
+                $("#clas-action").val("createClas");
+                $("#clasName").val("");
+                $("#addNewClas").val("Addd new class");
 
-                $formCreateClass.text("");
+                $form2.text("");
                 console.log("showClasses")
                 showClasses();
             }
         });
     };
 
-    $("#createClass").on("submit", (e) => {
-        console.log("createClass")
+    $("#formCreateClas").on("submit", (e) => {
+        console.log("createClas")
         e.stopPropagation();
-        createOrUpadateClass();
+        createOrUpadateClas();
         return false;
     });
 });
