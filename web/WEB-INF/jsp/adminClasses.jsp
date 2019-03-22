@@ -13,6 +13,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="js/adminClasses.js" type="text/javascript"></script>
+    <script src="js/adminClassesPupil.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/adminClass.css" type="text/css">
 
 </head>
@@ -35,7 +36,7 @@
                 </a>
             </div>
         </td>
-        <td class="classAndTeacher">
+        <td class="classAndPupil">
             <table class="cas">
                 <td class="mainClass">
                     <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>

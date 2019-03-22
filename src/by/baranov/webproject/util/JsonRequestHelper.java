@@ -28,6 +28,7 @@ public class JsonRequestHelper {
         commands.put("findAllClas", new FindAllClasCommand());
         commands.put("deleteClas", new DeleteClasCommand());
         commands.put("updateClas", new UpdateClasCommand());
+        commands.put("recoverPassword", new RecoverPasswordCommand());
     }
 
     public JsonCommand getCommand(HttpServletRequest request) {

@@ -18,7 +18,7 @@ public class ClassDaoImpl extends AbstractDao<Clas> {
     private final String FIND_CLAS_BY_ID = "SELECT clas_id, clas_name FROM clas WHERE clas_id = ?";
     private final String DELETE_CLAS_BY_ID = "DELETE FROM clas WHERE clas_id = ?";
     private final String CREATE_CLAS = "INSERT INTO clas SET clas_name = ?";
-    private final String UPDATE_CLAS = "UPDATE clas SET clas_name = ? WHERE user_id = ?";
+    private final String UPDATE_CLAS = "UPDATE clas SET clas_name = ? WHERE clas_id = ?";
 
     @Override
     public List<Clas> findAll() throws DaoException {

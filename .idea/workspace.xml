@@ -6,7 +6,88 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24bcf410-ffc1-48b9-b9f5-c7f02eec95c8" name="Default Changelist" comment="" />
+    <list default="true" id="24bcf410-ffc1-48b9-b9f5-c7f02eec95c8" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/PasswordRecoveryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/RecoverPasswordCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/passwordRecovery.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/adminTeacherAndSubject.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/passwordRecovery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/adminClassesPupil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/passwordRecovery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a9ce1e889722ecbba2a686c56ea39f4330f0b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a9ce1e889722ecbba2a686c56ea39f4330f0b3f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10976d0496ec192b7ca0fcb72a27ea802d9b8602" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10976d0496ec192b7ca0fcb72a27ea802d9b8602" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/17eee7bb8c864fc6be057352b521077b59fec5d9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/17eee7bb8c864fc6be057352b521077b59fec5d9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b6b5dd316797d613ee273e244d868907356ed87" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b6b5dd316797d613ee273e244d868907356ed87" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0ec00127740b6aadbe483dff678b7e5a09a4966" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0ec00127740b6aadbe483dff678b7e5a09a4966" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f29c154d2e551516e5430f924e8ce0fad42fd135" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f29c154d2e551516e5430f924e8ce0fad42fd135" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/JsonRequestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/JsonRequestHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/RequestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/RequestHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/jsp/adminSubjectAndTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/jsp/adminSubjectAndTeacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/js/adminSubjectAndTeacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/js/adminSubjectAndTeacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/command/impl/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/command/impl/LogoutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/command/impl/NoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/command/impl/SubjectAntTeacherCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/connectionpool/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/connectionpool/ProxyConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/connectionpool/ProxyConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/controller/JsonServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/dao/AbstractDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/dao/DaoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/entity/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/JsonCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/CreateUserCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/DeleteUserCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/FindAllUsersCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/SetLocaleEnCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/SetLocaleRuCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/jsoncommand/impl/UpdateUserCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/listener/SessionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/service/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/EmailSender$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/EmailSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/JsonRequestHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/JspHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/PasswordGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/PasswordHash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/by/baranov/webproject/util/RequestHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/resources/connection.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/resources/l18n/page_content_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sss/resources/l18n/page_content_ru.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/resources/l18n/page_content_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources/l18n/page_content_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/form/pupilForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/form/pupilForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/adminSubjectAndTeacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/adminSubjectAndTeacher.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,88 +127,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/JsonServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateClasCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/ClasService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/adminClasses.js">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            <state relative-caret-position="234">
+              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_main.jsp">
+        <entry file="file://$PROJECT_DIR$/web/form/userForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+            <state relative-caret-position="30">
+              <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/adminUser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+        <entry file="file://$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="ResourceBundle" />
         </entry>
       </file>
     </leaf>
@@ -163,25 +188,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/RoleStringToEnum.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubject.jsp" />
-        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content.properties" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/SubjectAntTeacherCommand.java" />
-        <option value="$PROJECT_DIR$/resources/resources/l18n/qwe_en.properties" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/listener/SessionListener.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/MainCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LogoutCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp" />
-        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content_ru.properties" />
-        <option value="$PROJECT_DIR$/web/form/userForm.jsp" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateUserCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeleteUserCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateUserCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/js/localeChange.js" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/SetLocaleRuCommand.java" />
         <option value="$PROJECT_DIR$/web/header/header.jsp" />
@@ -189,20 +198,13 @@
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/SetLocaleEnCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllUsersCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/ClassesCommand.java" />
-        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" />
-        <option value="$PROJECT_DIR$/web/form/pupilForm.jsp" />
-        <option value="$PROJECT_DIR$/web/css/admin.css" />
         <option value="$PROJECT_DIR$/web/css/adminClass.css" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/UsersCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/ClassService.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateClassCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllClasCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeleteClasCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateClasCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/entity/Clas.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/ClasService.java" />
@@ -214,6 +216,29 @@
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java" />
         <option value="$PROJECT_DIR$/web/js/adminUser.js" />
         <option value="$PROJECT_DIR$/web/js/adminClasses.js" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/form/pupilForm.jsp" />
+        <option value="$PROJECT_DIR$/web/js/adminClassesPupil.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp" />
+        <option value="$PROJECT_DIR$/web/css/admin.css" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/PasswordRecoveryCommand.java" />
+        <option value="$PROJECT_DIR$/web/css/passwordRecovery.css" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" />
+        <option value="$PROJECT_DIR$/web/js/adminSubjectAndTeacher.js" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/css/index.css" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/SubjectAntTeacherCommand.java" />
+        <option value="$PROJECT_DIR$/web/css/adminTeacherAndSubject.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/passwordRecovery.jsp" />
+        <option value="$PROJECT_DIR$/web/js/passwordRecovery.js" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/RecoverPasswordCommand.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp" />
       </list>
     </option>
   </component>
@@ -245,8 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,6 +362,13 @@
               <item name="sss" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webproject" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sss" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="webproject" type="462c0819:PsiDirectoryNode" />
               <item name="jsoncommand" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,6 +404,12 @@
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="sss" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sss" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
@@ -422,6 +458,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,9 +469,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552424004259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553194074170" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
@@ -590,11 +629,14 @@
       <workItem from="1550137615348" duration="54441000" />
       <workItem from="1551514232233" duration="4836000" />
       <workItem from="1551538586680" duration="163815000" />
+      <workItem from="1552467353391" duration="3271000" />
+      <workItem from="1552561216997" duration="31090000" />
+      <workItem from="1553242741482" duration="10267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292066000" />
+    <option name="totallyTimeSpent" value="336694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -607,9 +649,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7" visible="true" weight="0.24281392" />
-      <window_info id="Structure" order="1" sideWeight="0.3" side_tool="true" visible="true" weight="0.24281392" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6930693" visible="true" weight="0.25416037" />
+      <window_info id="Structure" order="1" sideWeight="0.3069307" side_tool="true" visible="true" weight="0.25416037" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -619,15 +662,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33878887" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33878887" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.33060557" />
       <window_info anchor="bottom" id="SonarLint" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
@@ -659,45 +702,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="300" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="301" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="302" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="303" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>request.getParameterMap()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getParameter(&quot;action&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getParameter(&quot;email&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>locale.toString()</expression-string>
         <language-id>JAVA</language-id>
@@ -728,226 +752,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>request.getParameter(&quot;email&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getParameter(&quot;email&quot;) != null || !request.getParameter(&quot;email&quot;).isEmpty()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((HttpServletRequest)servletRequest).getRequestURL()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1007" column="4" selection-start-line="1007" selection-start-column="4" selection-end-line="1007" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/SetLocaleRuCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/localeChange.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="554" column="13" selection-start-line="554" selection-start-column="13" selection-end-line="554" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2c2fbcd2-9802-4ec4-b2de-1486f72c51f4/schema/web_project/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/AdminSubjectCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/SetLocaleEnCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LogoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/SubjectAntTeacherCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/ClassesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/userForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="32" lean-forward="true" selection-start-line="1" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/pupilForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties">
-      <provider selected="true" editor-type-id="ResourceBundle" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/DaoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="170" column="5" lean-forward="true" selection-start-line="149" selection-start-column="8" selection-end-line="170" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/UsersCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1001,23 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateUserCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/adminClass.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2c2fbcd2-9802-4ec4-b2de-1486f72c51f4/schema/web_project/table/clas">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1029,16 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllClasCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,51 +860,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="119">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="91" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/ClasService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="319">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/adminClassesPupil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/PasswordRecoveryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllClasCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/SetLocaleEnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1133,31 +933,158 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateClasCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="98">
+          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/passwordRecovery.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/localeChange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/adminClass.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="31" column="12" lean-forward="true" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/adminClasses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="66" column="6" lean-forward="true" selection-end-line="74" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2c2fbcd2-9802-4ec4-b2de-1486f72c51f4/schema/web_project/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/adminSubjectAndTeacher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/adminUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+        <state relative-caret-position="744">
+          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/SubjectAntTeacherCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state relative-caret-position="51">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/adminTeacherAndSubject.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/pupilForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/sss_war_exploded/js/passwordRecovery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="221" selection-start-line="220" selection-end-line="221" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2189#2190#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2313#2314#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/JsonServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="166">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1165,10 +1092,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/adminClasses.js">
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        <state relative-caret-position="121">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/passwordRecovery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/passwordRecovery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateUserCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/RecoverPasswordCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/userForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
         </state>
       </provider>
     </entry>

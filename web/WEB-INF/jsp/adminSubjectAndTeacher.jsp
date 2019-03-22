@@ -10,52 +10,94 @@
 <html>
 <head>
     <title>Subject</title>
-    <%@include file="/header/header.jsp" %>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="js/adminSubject.js" type="text/javascript"></script>
+    <script src="js/adminSubjectAndTeacher.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/adminTeacherAndSubject.css" type="text/css">
+
+
 </head>
 <body>
 <fmt:setLocale value="${sessionScope.get('locale')}" scope="session"/>
-<input type="button" value="reload" onclick="window.location.reload()">
-<form id="form2" style="background-color: #b6ffae">
-    <input type="hidden" id="user-action" name="action" value="create">
-    <input type="hidden" id="userId" name="userId" value="">
-    <br>
-    <%@ include file="/form/userForm.jsp" %>
-    <br>
-    <div id="addNewUser_result"></div>
-    <br/>
-    <div class="error" style="color: red;">
 
-    </div>
-    <input id="addNewUser" type="submit"
-       value="<fmt:message key="admin.users.button.registration" bundle="${page_content}"/>"/>
-</form>
-
-<table id="teachers">
-    <thead>
+<table class="layout">
     <tr>
-        <th><fmt:message key="admin.teachertable.teacherID" bundle="${page_content}"/></th>
-        <th><fmt:message key="admin.teachertable.firstName" bundle="${page_content}"/></th>
-        <th><fmt:message key="admin.teachertable.lastName" bundle="${page_content}"/></th>
+        <td colspan="4" class="header">
+            <%@include file="/header/header.jsp" %>
+        </td>
     </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
-</table>
-
-<table id="subjects">
-    <thead>
     <tr>
-        <th><fmt:message key="admin.subjecttable.subjectID" bundle="${page_content}"/></th>
-        <th><fmt:message key="admin.subjecttable.subjectName" bundle="${page_content}"/></th>
-        <th><fmt:message key="admin.subjecttable.teacherID" bundle="${page_content}"/></th>
-    </tr>
-    </thead>
-    <tbody>
+        <td class="menu">
+            <form id="toClasses">
+                <input type="hidden" name="command" value="classes"/>
+                <input type="submit" value="<fmt:message key="admin.classes.form" bundle="${page_content}"/> "
+                       formmethod="post" formaction="controller">
+            </form>
+            <form id="toUsers" >
+                <input type="hidden" name="command" value="users"/>
+                <input type="submit" value="<fmt:message key="admin.user.form" bundle="${page_content}"/> "
+                       formmethod="post" formaction="controller">
+            </form>
+        </td>
+        <td class="main">
+            <td>
+                <b><fmt:message key="admin.user.form" bundle="${page_content}"/></b>
+                <form id="createSubject" style="background-color: #91e2ff">
+                    <input type="hidden" id="action" name="action" value="createSubject">
+                    <input type="hidden" id="subjectId" name="subjectId" value="">
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <label><fmt:message key="admin.subject.subjectName" bundle="${page_content}"/></label>
+                            </td>
+                            <td>
+                                <input type="text" name="subjectName"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                    </table>
+                    <br>
+                    <div id="addSubject_result"></div>
+                    <br/>
+                    <div class="error" style="color: red;">
 
-    </tbody>
+                    </div>
+                    <input id="addSubject" type="submit"
+                           value="<fmt:message key="admin.subject.addNewSubject" bundle="${page_content}"/>"/>
+                </form>
+
+                <table id="teachers">
+                    <thead>
+                    <tr>
+                        <th><fmt:message key="admin.teachertable.teacherID" bundle="${page_content}"/></th>
+                        <th><fmt:message key="admin.teachertable.firstName" bundle="${page_content}"/></th>
+                        <th><fmt:message key="admin.teachertable.lastName" bundle="${page_content}"/></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table id="subjects">
+                    <thead>
+                        <tr>
+                            <th><fmt:message key="admin.subjecttable.subjectID" bundle="${page_content}"/></th>
+                            <th><fmt:message key="admin.subjecttable.subjectName" bundle="${page_content}"/></th>
+                            <th><fmt:message key="admin.subjecttable.teacherID" bundle="${page_content}"/></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </td>
+    </tr>
 </table>
 </body>
 </html>

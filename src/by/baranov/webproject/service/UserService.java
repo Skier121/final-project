@@ -66,8 +66,7 @@ public class UserService {
     }
 
     public static boolean updateUser(long id, String email, String firstName,String lastName, String phone,
-                                     String address, String role)
-                                    throws ServiceException{
+                                     String address, String role) throws ServiceException{
         boolean result=false;
         UserDaoImpl userDao= new UserDaoImpl();
         try{
@@ -83,6 +82,27 @@ public class UserService {
         UserDaoImpl userDao= new UserDaoImpl();
         try{
             result=userDao.delete(id);
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+
+    public static String passwordRecovery(String email) throws ServiceException{
+        String result="";
+        UserDaoImpl userDao= new UserDaoImpl();
+        try{
+            User user=userDao.findUserByLogin(email);
+            if(user!=null) {
+                String password = PasswordGenerator.generatePassword();
+                String hashPassword = PasswordHash.doHashForPassword(password);
+                user.setPassword(hashPassword);
+                if (userDao.update(user) & EmailSender.sendMail(email, password)) {
+                    result = "{\"result\": \"New password sent to email\"}";
+                } else {
+                    result = "{\"result\": \"Wrong email! User not exist\"}";
+                }
+            }
         }catch (DaoException e){
             throw new ServiceException(e);
         }

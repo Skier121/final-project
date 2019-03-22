@@ -21,8 +21,10 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     private final String ADDRESS = "address";
     private final String PASSWORD = "password";
     private final String ROLE = "role";
-    private final String GET_USER_BY_LOGIN_AND_PASSWORD = "SELECT user_id, first_name, last_name, email, phone, address, " +
-            "password, role FROM user WHERE email=? AND password=?";
+    private final String FIND_USER_BY_LOGIN = "SELECT user_id, first_name, last_name, email, phone, address, " +
+            "role FROM user WHERE email=?";
+    private final String FIND_USER_BY_LOGIN_AND_PASSWORD = "SELECT user_id, first_name, last_name, email, phone, address, " +
+            "role FROM user WHERE email=? AND password=?";
     private final String FIND_ALL_USER = "SELECT user_id, first_name, last_name, email, phone, address, password, role " +
             "FROM user";
     private final String FIND_USER_BY_ID = "SELECT user_id, first_name, last_name, email, phone, address, password, role " +
@@ -178,7 +180,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
         ResultSet resultSet = null;
         try {
             connection = getConnectionPool().getConnection();
-            preparedStatement = connection.prepareStatement(GET_USER_BY_LOGIN_AND_PASSWORD);
+            preparedStatement = connection.prepareStatement(FIND_USER_BY_LOGIN_AND_PASSWORD);
             preparedStatement.setString(1, login);
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
@@ -201,8 +203,31 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     }
 
     @Override
-    public boolean findUserByLogin(String login) {
-        boolean result = false;
-        return result;
+    public User findUserByLogin(String login) throws  DaoException{
+        User user = null;
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(FIND_USER_BY_LOGIN);
+            preparedStatement.setString(1, login);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int userId = resultSet.getInt(USER_ID);
+                String firstName = resultSet.getString(FIRST_NAME);
+                String lastName = resultSet.getString(LAST_NAME);
+                String email = resultSet.getString(EMAIL);
+                String phoneNumber = resultSet.getString(PHONE);
+                String address = resultSet.getString(ADDRESS);
+                String role = resultSet.getString(ROLE);
+                user = new User(userId, firstName, lastName, email, phoneNumber, address, role);
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(preparedStatement, connection);
+        }
+        return user;
     }
 }

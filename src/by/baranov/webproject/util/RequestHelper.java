@@ -25,6 +25,7 @@ public class RequestHelper {
         commands.put("subjectAndTeacher", new SubjectAntTeacherCommand());
         commands.put("classes", new ClassesCommand());
         commands.put("users", new UsersCommand());
+        commands.put("passwordRecovery", new PasswordRecoveryCommand());
     }
 
     public Command getCommand(HttpServletRequest request) {

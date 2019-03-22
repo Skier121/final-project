@@ -12,28 +12,59 @@
   <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
   </head>
-  <%@include file="/header/header.jsp"%>
   <body>
   <fmt:setLocale value="${sessionScope.get('locale')}" scope="session"/>
   <fmt:setBundle basename="/resources/l18n/page_content" var="page_content" scope="session" />
-  <form id="1">
-      <fmt:message key="page.greetengs" bundle="${page_content}"/>
-  </form>
-  <form id="2">
-      <label><fmt:message key="login" bundle="${page_content}"/>
-         <input name="login" type="text" pattern="[\p{Alpha}\d\p{punct}]+@[\p{Alpha}]+.[\p{Alpha}]+" autofocus/>
-      </label>
-    <br>
-      <label><fmt:message key="password" bundle="${page_content}"/>
-         <input name="password" type="text">
-      </label>
-    <br>
-    <input type="hidden" name="command" value="login" />
-    <input type="submit" value="<fmt:message key="button.login" bundle="${page_content}"/> " formmethod="post"
-           formaction="controller"/>
-    <br>
-    <p>${sessionScope.get("wrong_data")}</p>
-  </form>
+  <table class="layout">
+    <tr>
+      <td colspan="2" class="header">
+        <%@include file="/header/header.jsp" %>
+      </td>
+    </tr>
+    <tr>
+      <td class="main">
+        <form id="1">
+          <table>
+            <fmt:message key="page.greetengs" bundle="${page_content}"/>
+        </form>
+        <table class="table">
+          <tr>
+            <td>
+              <label><fmt:message key="login" bundle="${page_content}"/></label>
+            </td>
+            <td>
+              <input name="login" type="text" pattern="[\p{Alpha}\d\p{punct}]+@[\p{Alpha}]+.[\p{Alpha}]+" autofocus/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><fmt:message key="password" bundle="${page_content}"/></label>
+            </td>
+            <td>
+                 <input name="password" type="text">
+            </td>
+          </tr>
+        </table>
+          <br>
+          <input type="hidden" name="command" value="login" />
+          <input type="submit" value="<fmt:message key="button.login" bundle="${page_content}"/> " formmethod="post"
+                 formaction="controller"/>
+          <br>
+          <p>${sessionScope.get("wrong_data")}</p>
+        </form>
+        <form id="passwordRecovery">
+          <label>
+            <fmt:message key="label.passwordRecovery" bundle="${page_content}"/>
+          </label>
+          <br>
+          <input type="hidden" name="command" value="passwordRecovery"/>
+          <input type="submit" value="<fmt:message key="button.passwordRecovery" bundle="${page_content}"/> "
+                 formmethod="post" formaction="controller"/>
+        </form>
+      </td>
+    </tr>
+  </table>
   </body>
 </html>
