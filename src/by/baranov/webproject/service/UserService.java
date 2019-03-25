@@ -13,6 +13,7 @@ import java.util.List;
 
 public class UserService {
     private static final Logger log= LogManager.getLogger();
+    private final static String PUPIL="PUPIL";
 
     public static User findUserById(int id) throws ServiceException{
         UserDaoImpl userDaoImpl =new UserDaoImpl();
@@ -102,6 +103,42 @@ public class UserService {
                 } else {
                     result = "{\"result\": \"Wrong email! User not exist\"}";
                 }
+            }
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+
+    public static List<User> findAllTeacher()throws ServiceException{
+        List<User> result=null;
+        UserDaoImpl userDao=new UserDaoImpl();
+        try{
+            result=userDao.findAllTeacher();
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+
+    public static List<User> findAllPupilInClas(String clasName) throws ServiceException{
+        List<User> result=null;
+        UserDaoImpl userDao=new UserDaoImpl();
+        try{
+            result=userDao.findAllPupilInClas(clasName);
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+
+    public static boolean addPupilToClas(String clasName, String email)throws ServiceException{
+        boolean result=false;
+        UserDaoImpl userDao=new UserDaoImpl();
+        try{
+            User user=userDao.findUserByLogin(email);
+            if(PUPIL.equals(user.getRole())) {
+                result = userDao.addPupilToClass(clasName, user);
             }
         }catch (DaoException e){
             throw new ServiceException(e);

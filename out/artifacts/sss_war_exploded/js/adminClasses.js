@@ -11,6 +11,44 @@ $(document).ready(() => {
         }
     };
 
+    const deletePupil = (userId)=>{
+        if (confirm("Really?")) {
+            $.ajax({
+                url: "/test/json",
+                method: "GET",
+                data: {action: "deletePupil", pupilId: userId},
+            }).then((resp) => {
+                showPupils();
+            });
+        }
+    };
+
+    const showPupils = () => {
+        var $table1 = $("#pupils tbody");
+        $table1.html("");
+
+        $.ajax({
+            url: "/test/json",
+            method: "GET",
+            data: {action: "findAllPupilInClas", clas: $("#clasSelect")},
+        }).then((resp) => {
+            $.each(resp, (i, user) => {
+                const tr = $("<tr></tr>");
+                const pupilDeleteButton = $("<input type='button' value='delete'/>");
+                pupilDeleteButton.on("click", ()=>{
+                    deletePupil(user.userId)
+                });
+                const tdDelete = $("<td></td>").append(pupilDeleteButton);
+                tr.append(`<td>${user.userId}</td>`);
+                tr.append(`<td>${user.firstName}</td>`);
+                tr.append(`<td>${user.lastName}</td>`);
+                tr.append(`<td>${user.email}</td>`);
+                tr.append(tdDelete);
+                $table.append(tr)
+            });
+        });
+    };
+
     const showClasses = () => {
         var $table = $("#classes tbody");
         $table.html("");
@@ -20,7 +58,10 @@ $(document).ready(() => {
             method: "GET",
             data: {action: "findAllClas"},
         }).then((resp) => {
+            var $select = $("#clasSelect");
+            $select.html('');
             $.each(resp, (i, clas) => {
+                $select.append(`<option>${clas.clasName}</option>`);
                 const tr = $("<tr></tr>");
                 const deleteButton = $("<input type='button' value='delete'/>");
                 deleteButton.on("click", ()=>{
@@ -43,7 +84,9 @@ $(document).ready(() => {
             });
         });
     };
+
     showClasses();
+
     const createOrUpadateClas = ()=>{
         $.ajax({
             url: "/test/json",
@@ -66,10 +109,31 @@ $(document).ready(() => {
         });
     };
 
+    const addPupilToClas = ()=>{
+        $.ajax({
+            url: "/test/json",
+            method: "POST",
+            data: $("#addPupilToClas").serialize(),
+        }).then((resp) => {
+            var $form3 = $("#pupil_result");
+            $form3.text(resp.result);
+            $("#pupilEmail").val("");
+            console.log("addPupilToClas")
+            showPupils();
+        });
+    };
+
     $("#formCreateClas").on("submit", (e) => {
         console.log("createClas")
         e.stopPropagation();
         createOrUpadateClas();
+        return false;
+    });
+
+    $("#addPupilToClas").on("submit", (e) => {
+        console.log("addPupilToClas")
+        e.stopPropagation();
+        addPupilToClas();
         return false;
     });
 });

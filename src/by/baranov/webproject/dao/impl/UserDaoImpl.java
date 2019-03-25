@@ -21,6 +21,12 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     private final String ADDRESS = "address";
     private final String PASSWORD = "password";
     private final String ROLE = "role";
+    private final String ADD_PUPIL_TO_CLASS = "INSERT INTO pupil SET user_id = ?, class_name = ?";
+    private final String FIND_CLAS_ALL_PUPIL = "SELECT user.user_id, user.first_name, user.last_name, user.email, " +
+            "user.phone, user.address, user.password, user.role FROM user JOIN pupil ON user.user_id= pupil.user_id " +
+            "WHERE pupil.class_name = ?";
+    private final String FIND_ALL_TEACHER = "SELECT user_id, first_name, last_name, email, phone, address, password, role " +
+            "FROM user WHERE role = \"TEACHER\"";
     private final String FIND_USER_BY_LOGIN = "SELECT user_id, first_name, last_name, email, phone, address, " +
             "role FROM user WHERE email=?";
     private final String FIND_USER_BY_LOGIN_AND_PASSWORD = "SELECT user_id, first_name, last_name, email, phone, address, " +
@@ -84,7 +90,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             preparedStatement.setLong(1, id);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int userId = resultSet.getInt(USER_ID);
+                long userId = resultSet.getLong(USER_ID);
                 String firstName = resultSet.getString(FIRST_NAME);
                 String lastName = resultSet.getString(LAST_NAME);
                 String email = resultSet.getString(EMAIL);
@@ -185,7 +191,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int userId = resultSet.getInt(USER_ID);
+                long userId = resultSet.getLong(USER_ID);
                 String firstName = resultSet.getString(FIRST_NAME);
                 String lastName = resultSet.getString(LAST_NAME);
                 String email = resultSet.getString(EMAIL);
@@ -214,7 +220,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             preparedStatement.setString(1, login);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int userId = resultSet.getInt(USER_ID);
+                long userId = resultSet.getLong(USER_ID);
                 String firstName = resultSet.getString(FIRST_NAME);
                 String lastName = resultSet.getString(LAST_NAME);
                 String email = resultSet.getString(EMAIL);
@@ -229,5 +235,81 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             releaseResources(preparedStatement, connection);
         }
         return user;
+    }
+
+    public List<User> findAllTeacher() throws DaoException {
+        List<User> resultList = new ArrayList<>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(FIND_ALL_TEACHER);
+            while (resultSet.next()) {
+                long userId = resultSet.getLong(USER_ID);
+                String firstName = resultSet.getString(FIRST_NAME);
+                String lastName = resultSet.getString(LAST_NAME);
+                String email = resultSet.getString(EMAIL);
+                String password = resultSet.getString(PASSWORD);
+                String phoneNumber = resultSet.getString(PHONE);
+                String address = resultSet.getString(ADDRESS);
+                String role = resultSet.getString(ROLE);
+                resultList.add(new User(userId, firstName, lastName, email, password, phoneNumber, address, role));
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(resultSet, statement, connection);
+        }
+        return resultList;
+    }
+
+    public List<User> findAllPupilInClas(String clasName) throws DaoException {
+        List<User> resultList = new ArrayList<>();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(FIND_CLAS_ALL_PUPIL);
+            preparedStatement.setString(1, clasName);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                long userId = resultSet.getLong(USER_ID);
+                String firstName = resultSet.getString(FIRST_NAME);
+                String lastName = resultSet.getString(LAST_NAME);
+                String email = resultSet.getString(EMAIL);
+                String password = resultSet.getString(PASSWORD);
+                String phoneNumber = resultSet.getString(PHONE);
+                String address = resultSet.getString(ADDRESS);
+                String role = resultSet.getString(ROLE);
+                resultList.add(new User(userId, firstName, lastName, email, password, phoneNumber, address, role));
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(resultSet, preparedStatement, connection);
+        }
+        return resultList;
+    }
+
+    public boolean addPupilToClass(String clasName,User user) throws DaoException {
+        boolean result = false;
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(ADD_PUPIL_TO_CLASS);
+            preparedStatement.setLong(1, user.getUserId());
+            preparedStatement.setString(2, clasName);
+            preparedStatement.executeUpdate();
+            result = true;
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(preparedStatement, connection);
+        }
+        return result;
     }
 }

@@ -41,8 +41,8 @@
         </td>
         <td class="main">
             <td>
-                <b><fmt:message key="admin.user.form" bundle="${page_content}"/></b>
-                <form id="createSubject" style="background-color: #91e2ff">
+                <b><fmt:message key="admin.subjects.form" bundle="${page_content}"/></b>
+                <form id="formCreateSubject" style="background-color: #91e2ff">
                     <input type="hidden" id="action" name="action" value="createSubject">
                     <input type="hidden" id="subjectId" name="subjectId" value="">
                     <br>
@@ -52,18 +52,22 @@
                                 <label><fmt:message key="admin.subject.subjectName" bundle="${page_content}"/></label>
                             </td>
                             <td>
-                                <input type="text" name="subjectName"/>
+                                <input id="subjectName" type="text" name="subjectName"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><fmt:message key="admin.subject.teacherId" bundle="${page_content}"/></label>
+                            </td>
+                            <td>
+                                <input id="teacherId" type="text" name="teacherId"/>
                             </td>
                         </tr>
                     </table>
                     <br>
                     <div id="addSubject_result"></div>
-                    <br/>
-                    <div class="error" style="color: red;">
-
-                    </div>
                     <input id="addSubject" type="submit"
-                           value="<fmt:message key="admin.users.button.registration" bundle="${page_content}"/>"/>
+                           value="<fmt:message key="admin.subject.addNewSubject" bundle="${page_content}"/>"/>
                 </form>
 
                 <table id="teachers">

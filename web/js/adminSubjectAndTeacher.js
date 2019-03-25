@@ -1,75 +1,96 @@
 $(document).ready(() => {
-    const deleteClass = (clasId)=>{
+    const deleteSubject = (subjectId)=>{
         if (confirm("Really?")) {
             $.ajax({
                 url: "/test/json",
                 method: "GET",
-                data: {action: "deleteClas", clasId: clasId},
+                data: {action: "deleteSubject", subjectId: subjectId},
             }).then((resp) => {
-                showClasses();
+                showSubject();
             });
         }
     };
 
-    const showClasses = () => {
-        var $table = $("#classes tbody");
+    const showTeacher = () => {
+        var $table1 = $("#teachers tbody");
+        $table1.html("");
+
+        $.ajax({
+            url: "/test/json",
+            method: "GET",
+            data: {action: "findAllTeacher"},
+        }).then((resp) => {
+            $.each(resp, (i, user) => {
+                const tr = $("<tr></tr>");
+                tr.append(`<td>${user.userId}</td>`);
+                tr.append(`<td>${user.firstName}</td>`);
+                tr.append(`<td>${user.lastName}</td>`);
+                $table1.append(tr)
+            });
+        });
+    };
+
+    const showSubject = () => {
+        var $table = $("#subjects tbody");
         $table.html("");
 
         $.ajax({
             url: "/test/json",
             method: "GET",
-            data: {action: "findAllClas"},
+            data: {action: "findAllSubject"},
         }).then((resp) => {
-            $.each(resp, (i, clas) => {
+            $.each(resp, (i, subject) => {
                 const tr = $("<tr></tr>");
                 const deleteButton = $("<input type='button' value='delete'/>");
                 deleteButton.on("click", ()=>{
-                    deleteClass(clas.clasId)
+                    deleteSubject(subject.subjectId)
                 });
                 const tdDelete = $("<td></td>").append(deleteButton);
                 const updateButton = $("<input type='button' value='edit'/>");
                 updateButton.on("click", ()=>{
-                    $("#clas-action").val("updateClas");
-                    $("#clasId").val(clas.clasId);
-                    $("#clasName").val(clas.clasName);
-                    $("#addNewClas").val("Update class");
+                    $("#action").val("updateSubject");
+                    $("#subjectId").val(subject.subjectId);
+                    $("#subjectName").val(subject.subjectName);
+                    $("#teacherId").val(subject.teacherId);
+                    $("#addSubject").val("Update subject");
                 });
                 const tdupdate = $("<td></td>").append(updateButton);
-                tr.append(`<td>${clas.clasId}</td>`);
-                tr.append(`<td>${clas.clasName}</td>`);
+                tr.append(`<td>${subject.subjectId}</td>`);
+                tr.append(`<td>${subject.subjectName}</td>`);
+                tr.append(`<td>${subject.teacherId}</td>`);
                 tr.append(updateButton);
                 tr.append(tdDelete);
                 $table.append(tr)
             });
         });
     };
-    showClasses();
-    const createOrUpadateClas = ()=>{
+    showSubject();
+    showTeacher();
+
+    const createOrUpadateSubject = ()=>{
         $.ajax({
             url: "/test/json",
             method: "POST",
-            data: $("#formCreateClas").serialize(),
+            data: $("#formCreateSubject").serialize(),
         }).then((resp) => {
-            var $form2 = $("#formCreateClass .error");
+            var $form2 = $("#addSubject_result");
             $form2.text(resp.result);
-            if (resp.error) {
-                $form2.text(resp.error);
-            } else {
-                $("#clas-action").val("createClas");
-                $("#clasName").val("");
-                $("#addNewClas").val("Addd new class");
+            $("#subject-action").val("createSubject");
+            $("#subjectName").val("");
+            $("#teacherId").val("");
+            $("#addNewSubject").val("Addd new subject");
 
-                $form2.text("");
-                console.log("showClasses")
-                showClasses();
-            }
+            $form2.text("");
+            console.log("showSubject")
+            showSubject();
+
         });
     };
 
-    $("#formCreateClas").on("submit", (e) => {
-        console.log("createClas")
+    $("#formCreateSubject").on("submit", (e) => {
+        console.log("createSubject")
         e.stopPropagation();
-        createOrUpadateClas();
+        createOrUpadateSubject();
         return false;
     });
 });

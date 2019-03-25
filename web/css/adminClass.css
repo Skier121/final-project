@@ -18,7 +18,7 @@ body {
 .menu {
     width: 200px;
     vertical-align: top;
-    background-color: blue;
+    background-color: #28b3ff;
 }
 
 .menu div {
@@ -43,4 +43,8 @@ body {
 .header {
     background-color: #28b3ff;
     text-align: right;
+}
+
+.classAndPupil{
+    background-color: aquamarine;
 }

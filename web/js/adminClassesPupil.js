@@ -11,8 +11,20 @@ $(document).ready(() => {
         }
     };
 
-    const showPupils = () => {
-        var $table = $("#pupils tbody");
+    const deletePupil = (userId)=>{
+        if (confirm("Really?")) {
+            $.ajax({
+                url: "/test/json",
+                method: "GET",
+                data: {action: "deletePupil", pupilId: userId},
+            }).then((resp) => {
+                showPupils();
+            });
+        }
+    };
+
+    const showClasses = () => {
+        var $table = $("#classes tbody");
         $table.html("");
 
         $.ajax({
@@ -24,26 +36,69 @@ $(document).ready(() => {
                 const tr = $("<tr></tr>");
                 const deleteButton = $("<input type='button' value='delete'/>");
                 deleteButton.on("click", ()=>{
-                    deleteClass(clas.clasId)
+                    deleteClas(clas.clasId)
                 });
                 const tdDelete = $("<td></td>").append(deleteButton);
                 const updateButton = $("<input type='button' value='edit'/>");
                 updateButton.on("click", ()=>{
-                    $("#clas-action").val("updateClas");
-                    $("#clasId").val(clas.clasId);
-                    $("#clasName").val(clas.clasName);
-                    $("#addNewClas").val("Update class");
+                    $("#action").val("updateClas");
+                    $("#userId").val(clas.clasId);
+                    $("#firstName").val(clas.clasName);
+                    $("#addNewClas").val("update class");
                 });
                 const tdupdate = $("<td></td>").append(updateButton);
                 tr.append(`<td>${clas.clasId}</td>`);
                 tr.append(`<td>${clas.clasName}</td>`);
                 tr.append(updateButton);
                 tr.append(tdDelete);
+                $table.append(tr);
+                fillSelect();
+            });
+        });
+    };
+
+    const fillSelect = () =>{
+        $.ajax({
+            url: "/test/json",
+            method: "GET",
+            data: {action: "findAllClas", pupilId: userId},
+        }).then((resp) => {
+            var $select = $("#clasSelect");
+            $.each(resp, (i, user) => {
+                select.append($(`<option value="${clas.name}"></option>`));
+            });
+        })
+    }
+
+    const showPupils = () => {
+        var $table1 = $("#pupils tbody");
+        $table1.html("");
+
+        $.ajax({
+            url: "/test/json",
+            method: "GET",
+            data: {action: "findAllPupilInClas", clas: $("#clasSelect")},
+        }).then((resp) => {
+            $.each(resp, (i, user) => {
+                const tr = $("<tr></tr>");
+                const pupilDeleteButton = $("<input type='button' value='delete'/>");
+                pupilDeleteButton.on("click", ()=>{
+                    deletePupil(user.userId)
+                });
+                const tdDelete = $("<td></td>").append(pupilDeleteButton);
+                tr.append(`<td>${user.userId}</td>`);
+                tr.append(`<td>${user.firstName}</td>`);
+                tr.append(`<td>${user.lastName}</td>`);
+                tr.append(`<td>${user.email}</td>`);
+                tr.append(tdDelete);
                 $table.append(tr)
             });
         });
     };
+
     showClasses();
+    showPupils();
+
     const createOrUpadateClas = ()=>{
         $.ajax({
             url: "/test/json",

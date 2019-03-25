@@ -13,7 +13,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="js/adminClasses.js" type="text/javascript"></script>
-    <script src="js/adminClassesPupil.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/adminClass.css" type="text/css">
 
 </head>
@@ -70,8 +69,8 @@
 
                 <td class="mainPupil">
                     <b><fmt:message key="admin.classes.form" bundle="${page_content}"/></b>
-                    <form id="addPupilToClass" style="background-color: #b6ffae">
-                        <input type="hidden" id="class-action" name="action" value="addPupilToClass">
+                    <form id="addPupilToClas" style="background-color: #b6ffae">
+                        <input type="hidden" id="action" name="action" value="addPupilToClas">
                         <input type="hidden" id="classId" name="classId" value="">
                         <br>
                         <%@ include file="/form/pupilForm.jsp" %>
