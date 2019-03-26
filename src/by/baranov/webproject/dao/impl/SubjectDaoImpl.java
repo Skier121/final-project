@@ -13,15 +13,17 @@ import java.util.List;
 
 public class SubjectDaoImpl extends AbstractDao<Subject> {
     private final static Logger log = LogManager.getLogger();
+    private final String TIMETABLE_LESSSON_ID = "timetable.lesson_id";
     private final String SUBJECT_SUBJECT_NAME = "subject.subject_name";
     private final String TIMETABLE_CLASS_NAME = "timetable.class_name";
     private final String TIMETABLE_LESSON_NUMBER = "timetable.lesson_number";
     private final String SUBJECT_ID = "subject_id";
     private final String SUBJECT_NAME = "subject_name";
     private final String TEACHER_ID = "teacher_id";
-    private final String FIND_ALL_TEACHER_SUBJECT = "SELECT subject.subject_name IN (SELECT subject_name FROM subject" +
-            " WHERE subject.subject_id = timetable.subject_id), timetable.class_name, timetable.lesson_number FROM timetable" +
-            " WHERE timetable.subject_id IN (SELECT subject_id FROM subject WHERE teacher_id = ?) AND timetable.date = ?";
+    private final String FIND_ALL_TEACHER_SUBJECT = "SELECT timetable.lesson_id, subject.subject_name, timetable.class_name, " +
+            "timetable.lesson_number FROM timetable JOIN subject ON timetable.subject_id = subject.subject_id" +
+            " WHERE timetable.subject_id IN (SELECT subject_id FROM subject WHERE teacher_id = ?) AND date = ? " +
+            "AND timetable.completed = 0";
     private final String FIND_ALL_SUBJECT = "SELECT subject_id, subject_name, teacher_id FROM subject";
     private final String FIND_SUBJECT_BY_ID = "SELECT subject_id, subject_name, teacher_id FROM subject WHERE subject_id = ?";
     private final String DELETE_SUBJECT_BY_ID = "DELETE FROM subject WHERE subject_id = ?";
@@ -149,11 +151,13 @@ public class SubjectDaoImpl extends AbstractDao<Subject> {
             preparedStatement = connection.prepareStatement(FIND_ALL_TEACHER_SUBJECT);
             preparedStatement.setLong(1, teacherId);
             preparedStatement.setDate(2, date);
+            resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
+                long lessonId = resultSet.getLong(TIMETABLE_LESSSON_ID);
                 int lessonNumber = resultSet.getInt(TIMETABLE_LESSON_NUMBER);
                 String subjectName = resultSet.getString(SUBJECT_SUBJECT_NAME);
                 String className = resultSet.getString(TIMETABLE_CLASS_NAME);
-                resultList.add(new LessonDto(lessonNumber, subjectName, className));
+                resultList.add(new LessonDto(lessonId, lessonNumber, subjectName, className));
             }
         } catch (SQLException e) {
             throw new DaoException(e);

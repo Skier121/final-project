@@ -1,19 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: HP
-  Date: 08.02.2019
-  Time: 15:23
+  Date: 26.03.2019
+  Time: 18:14
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
-    <title>Teacher</title>
+    <title>Lesson</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="js/teacher.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/teacher.css" type="text/css">
+    <script src="js/lesson.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/lesson.css" type="text/css">
 </head>
 
 <body>

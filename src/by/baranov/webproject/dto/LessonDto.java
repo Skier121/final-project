@@ -1,14 +1,24 @@
 package by.baranov.webproject.dto;
 
 public class LessonDto {
+    private long lessonId;
     private int lessonNumber;
     private String lessonSubjectName;
     private String lessonClassName;
 
-    public LessonDto(int lessonNumber, String lessonSubjectName, String lessonClassName) {
+    public LessonDto(long lessonId, int lessonNumber, String lessonSubjectName, String lessonClassName) {
+        this.lessonId = lessonId;
         this.lessonNumber = lessonNumber;
         this.lessonSubjectName = lessonSubjectName;
         this.lessonClassName = lessonClassName;
+    }
+
+    public long getLessonId() {
+        return lessonId;
+    }
+
+    public void setLessonId(long lessonId) {
+        this.lessonId = lessonId;
     }
 
     public int getLessonNumber() {
@@ -38,8 +48,9 @@ public class LessonDto {
     @Override
     public String toString() {
         return "{" +
-                "  \"lessonNumber\":" + lessonNumber +
-                ", \"sunjectName\":\"" + lessonSubjectName + "\"" +
+                "  \"lessonId\":" + lessonId +
+                ", \"lessonNumber\":" + lessonNumber +
+                ", \"subjectName\":\"" + lessonSubjectName + "\"" +
                 ", \"className\":\"" + lessonClassName + "\"" +
                 '}';
     }

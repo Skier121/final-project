@@ -1,91 +1,42 @@
 $(document).ready(() => {
-    const deleteClass = (clasId)=>{
+    const beginLesson = (lessonId)=>{
         if (confirm("Really?")) {
             $.ajax({
                 url: "/test/json",
                 method: "GET",
-                data: {action: "deleteClas", clasId: clasId},
+                data: {action: "beginLesson", lessonId: lessonId},
             }).then((resp) => {
-                showClasses();
             });
         }
     };
 
-    const deletePupil = (userId)=>{
-        if (confirm("Really?")) {
-            $.ajax({
-                url: "/test/json",
-                method: "GET",
-                data: {action: "deletePupil", pupilId: userId},
-            }).then((resp) => {
-                showPupils();
-            });
-        }
-    };
-
-    const showPupils = () => {
-        var $table4 = $("#pupils tbody");
-        $table4.html("");
-
-        $.ajax({
-            url: "/test/json",
-            method: "GET",
-            data: {action: "findAllPupilInClas", clas: $("#clasSelect")},
-        }).then((resp) => {
-            $.each(resp, (i, user) => {
-                const tr = $("<tr></tr>");
-                const pupilDeleteButton = $("<input type='button' value='delete'/>");
-                pupilDeleteButton.on("click", ()=>{
-                    deletePupil(user.userId)
-                });
-                const tdDelete = $("<td></td>").append(pupilDeleteButton);
-                tr.append(`<td>${user.userId}</td>`);
-                tr.append(`<td>${user.firstName}</td>`);
-                tr.append(`<td>${user.lastName}</td>`);
-                tr.append(`<td>${user.email}</td>`);
-                tr.append(tdDelete);
-                $table.append(tr)
-            });
-        });
-    };
-
-    const showClasses = () => {
-        var $table = $("#classes tbody");
+    const showLessons = () => {
+        var $table = $("#lessons tbody");
         $table.html("");
 
         $.ajax({
             url: "/test/json",
             method: "GET",
-            data: {action: "findAllClas"},
+            data: {action: "findAllTeacherSubject"},
         }).then((resp) => {
-            var $select = $("#clasSelect");
-            $select.html('');
-            $.each(resp, (i, clas) => {
-                $select.append(`<option>${clas.clasName}</option>`);
+            $.each(resp, (i, lesson) => {
                 const tr = $("<tr></tr>");
-                const deleteButton = $("<input type='button' value='delete'/>");
-                deleteButton.on("click", ()=>{
-                    deleteClass(clas.clasId)
+                const beginButton = $("<input type='button' value='begin'/>");
+                beginButton.on("click", ()=>{
+                    beginLesson(lesson.lessonId)
                 });
-                const tdDelete = $("<td></td>").append(deleteButton);
-                const updateButton = $("<input type='button' value='edit'/>");
-                updateButton.on("click", ()=>{
-                    $("#clas-action").val("updateClas");
-                    $("#clasId").val(clas.clasId);
-                    $("#clasName").val(clas.clasName);
-                    $("#addNewClas").val("Update class");
-                });
-                const tdupdate = $("<td></td>").append(updateButton);
-                tr.append(`<td>${clas.clasId}</td>`);
-                tr.append(`<td>${clas.clasName}</td>`);
-                tr.append(updateButton);
-                tr.append(tdDelete);
+                const tdBegin = $("<td></td>").append(beginButton);
+                tr.append(`<td>${lesson.lessonId}</td>`);
+                tr.append(`<td>${lesson.lessonNumber}</td>`);
+                tr.append(`<td>${lesson.subjectName}</td>`);
+                tr.append(`<td>${lesson.className}</td>`);
+                tr.append(tdBegin);
                 $table.append(tr)
             });
         });
     };
 
-    showClasses();
+    showLessons();
 
     const createOrUpadateClas = ()=>{
         $.ajax({
@@ -108,27 +59,6 @@ $(document).ready(() => {
             }
         });
     };
-
-    const addPupilToClas = ()=>{
-        $.ajax({
-            url: "/test/json",
-            method: "POST",
-            data: $("#addPupilToClas").serialize(),
-        }).then((resp) => {
-            var $form3 = $("#pupil_result");
-            $form3.text(resp.result);
-            $("#pupilEmail").val("");
-            console.log("addPupilToClas")
-            showPupils();
-        });
-    };
-
-    $("#formCreateClas").on("submit", (e) => {
-        console.log("createClas")
-        e.stopPropagation();
-        createOrUpadateClas();
-        return false;
-    });
 
     $("#addPupilToClas").on("submit", (e) => {
         console.log("addPupilToClas")

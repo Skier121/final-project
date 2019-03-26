@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
+import java.util.Calendar;
 import java.util.stream.Collectors;
 
 public class FindAllTeacherSubjectCommand implements JsonCommand {
@@ -21,9 +22,10 @@ public class FindAllTeacherSubjectCommand implements JsonCommand {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response){
         String result="";
-        User user= (User)request.getAttribute("user");
+        User user= (User)request.getSession().getAttribute("userInSystem");
         long teacherId= user.getUserId();
-        Date date= (Date)request.getAttribute("date");
+        System.out.println(new java.sql.Date(Calendar.getInstance().getTime().getTime()));
+        Date date= new Date(Calendar.getInstance().getTime().getTime());
         try {
             result = "[" + SubjectService.findAllTeacherSubject(teacherId, date).stream().map(LessonDto::toString)
                     .collect(Collectors.joining(",")) + "]";
