@@ -34,8 +34,10 @@ public class JsonRequestHelper {
         commands.put("deleteSubject", new DeleteSubjectCommand());
         commands.put("findAllSubject", new FindAllSubjectCommand());
         commands.put("findAllTeacher", new FindAllTeacherCommand());
-        commands.put("findAllPupilInClas", new FindAllPupilInClas());
-        commands.put("addPupilToClas", new AddPupilToClas());
+        commands.put("findAllPupilInClas", new FindAllPupilInClasCommand());
+        commands.put("addPupilToClas", new AddPupilToClasCommand());
+        commands.put("deletePupil", new DeletePupilCommand());
+        commands.put("findAllTeacherSubject", new FindAllTeacherSubjectCommand());
     }
 
     public JsonCommand getCommand(HttpServletRequest request) {

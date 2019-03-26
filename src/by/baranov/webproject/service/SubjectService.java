@@ -2,10 +2,12 @@ package by.baranov.webproject.service;
 
 import by.baranov.webproject.dao.DaoException;
 import by.baranov.webproject.dao.impl.SubjectDaoImpl;
+import by.baranov.webproject.dto.LessonDto;
 import by.baranov.webproject.entity.Subject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.Date;
 import java.util.List;
 
 public class SubjectService {
@@ -60,6 +62,16 @@ public class SubjectService {
         SubjectDaoImpl subjectDao=new SubjectDaoImpl();
         try{
             result=subjectDao.delete(id);
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+    public static List<LessonDto> findAllTeacherSubject(long teacherId, Date date)throws ServiceException{
+        List<LessonDto> result=null;
+        SubjectDaoImpl subjectDao=new SubjectDaoImpl();
+        try{
+            result=subjectDao.findAllTeacherSubject(teacherId, date);
         }catch (DaoException e){
             throw new ServiceException(e);
         }

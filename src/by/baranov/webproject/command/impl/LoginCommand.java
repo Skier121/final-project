@@ -5,6 +5,7 @@ import by.baranov.webproject.entity.User;
 import by.baranov.webproject.service.ServiceException;
 import by.baranov.webproject.service.UserService;
 import by.baranov.webproject.util.JspHelper;
+import by.baranov.webproject.util.PasswordHash;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,9 +28,11 @@ public class LoginCommand implements Command {
         String page = null;
         String login = request.getParameter(PARAM_NAME_LOGIN);
         String password = request.getParameter(PARAM_NAME_PASSWORD);
+        password = PasswordHash.doHashForPassword(password);
         if (login == null) {
             login = (String) request.getAttribute(PARAM_NAME_LOGIN);
             password = (String) request.getAttribute(PARAM_NAME_PASSWORD);
+            password = PasswordHash.doHashForPassword(password);
         }
         User user = null;
         try {

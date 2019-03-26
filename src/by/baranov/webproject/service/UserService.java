@@ -145,4 +145,15 @@ public class UserService {
         }
         return result;
     }
+
+    public static boolean deletePupil(long pupilId) throws ServiceException{
+        boolean result=false;
+        UserDaoImpl userDao= new UserDaoImpl();
+        try{
+            result=userDao.deletePupil(pupilId);
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
 }

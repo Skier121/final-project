@@ -21,9 +21,10 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     private final String ADDRESS = "address";
     private final String PASSWORD = "password";
     private final String ROLE = "role";
+    private final String DELETE_PUPIL_BY_ID = "DELETE FROM pupil WHERE user_id = ?";
     private final String ADD_PUPIL_TO_CLASS = "INSERT INTO pupil SET user_id = ?, class_name = ?";
     private final String FIND_CLAS_ALL_PUPIL = "SELECT user.user_id, user.first_name, user.last_name, user.email, " +
-            "user.phone, user.address, user.password, user.role FROM user JOIN pupil ON user.user_id= pupil.user_id " +
+            "user.phone, user.address, user.password, user.role FROM user JOIN pupil ON user.user_id = pupil.user_id " +
             "WHERE pupil.class_name = ?";
     private final String FIND_ALL_TEACHER = "SELECT user_id, first_name, last_name, email, phone, address, password, role " +
             "FROM user WHERE role = \"TEACHER\"";
@@ -303,6 +304,24 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             preparedStatement = connection.prepareStatement(ADD_PUPIL_TO_CLASS);
             preparedStatement.setLong(1, user.getUserId());
             preparedStatement.setString(2, clasName);
+            preparedStatement.executeUpdate();
+            result = true;
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(preparedStatement, connection);
+        }
+        return result;
+    }
+
+    public boolean deletePupil(long id) throws DaoException {
+        boolean result = false;
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(DELETE_PUPIL_BY_ID);
+            preparedStatement.setLong(1, id);
             preparedStatement.executeUpdate();
             result = true;
         } catch (SQLException e) {

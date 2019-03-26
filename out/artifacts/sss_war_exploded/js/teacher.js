@@ -30,7 +30,7 @@ $(document).ready(() => {
         $.ajax({
             url: "/test/json",
             method: "GET",
-            data: {action: "findAllPupilInClas", clas: $("#clasSelect").val()},
+            data: {action: "findAllPupilInClas", clas: $("#clasSelect")},
         }).then((resp) => {
             $.each(resp, (i, user) => {
                 const tr = $("<tr></tr>");
@@ -44,7 +44,7 @@ $(document).ready(() => {
                 tr.append(`<td>${user.lastName}</td>`);
                 tr.append(`<td>${user.email}</td>`);
                 tr.append(tdDelete);
-                $table4.append(tr)
+                $table.append(tr)
             });
         });
     };
