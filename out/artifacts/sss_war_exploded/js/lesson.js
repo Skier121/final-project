@@ -2,10 +2,11 @@ $(document).ready(() => {
     const beginLesson = (lessonId)=>{
         if (confirm("Really?")) {
             $.ajax({
-                url: "/test/controller",
+                url: "/test/json",
                 method: "GET",
-                data: {command: "beginLesson", lessonId: lessonId},
-            })
+                data: {action: "beginLesson", lessonId: lessonId},
+            }).then((resp) => {
+            });
         }
     };
 

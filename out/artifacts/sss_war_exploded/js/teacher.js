@@ -1,13 +1,6 @@
 $(document).ready(() => {
     const beginLesson = (lessonId)=>{
-        if (confirm("Really?")) {
-            $.ajax({
-                url: "/test/json",
-                method: "GET",
-                data: {action: "beginLesson", lessonId: lessonId},
-            }).then((resp) => {
-            });
-        }
+        window.location.htef="/WEB-INF/jsp/lesson.jsp"
     };
 
     const showLessons = () => {
@@ -35,35 +28,5 @@ $(document).ready(() => {
             });
         });
     };
-
     showLessons();
-
-    const createOrUpadateClas = ()=>{
-        $.ajax({
-            url: "/test/json",
-            method: "POST",
-            data: $("#formCreateClas").serialize(),
-        }).then((resp) => {
-            var $form2 = $("#formCreateClass .error");
-            $form2.text(resp.result);
-            if (resp.error) {
-                $form2.text(resp.error);
-            } else {
-                $("#clas-action").val("createClas");
-                $("#clasName").val("");
-                $("#addNewClas").val("Addd new class");
-
-                $form2.text("");
-                console.log("showClasses")
-                showClasses();
-            }
-        });
-    };
-
-    $("#addPupilToClas").on("submit", (e) => {
-        console.log("addPupilToClas")
-        e.stopPropagation();
-        addPupilToClas();
-        return false;
-    });
 });
