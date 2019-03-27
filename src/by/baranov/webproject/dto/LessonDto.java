@@ -48,8 +48,8 @@ public class LessonDto {
     @Override
     public String toString() {
         return "{" +
-                "  \"lessonId\":" + lessonId +
-                ", \"lessonNumber\":" + lessonNumber +
+                "  \"lessonId\":\"" + lessonId + "\"" +
+                ", \"lessonNumber\":\"" + lessonNumber + "\"" +
                 ", \"subjectName\":\"" + lessonSubjectName + "\"" +
                 ", \"className\":\"" + lessonClassName + "\"" +
                 '}';

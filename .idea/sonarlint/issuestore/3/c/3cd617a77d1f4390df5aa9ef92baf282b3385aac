@@ -1,11 +1,11 @@
 
-®%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(ıù±8º³Ï•-
-Ksquid:S1989"-Add a "try/catch" block for "processRequest".(‘ŸÑ8€Â«•-
 Ksquid:S1989"-Add a "try/catch" block for "processRequest".(‘ŸÑ8€Â«•-
-£%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ıù±8º³Ï•-
+]squid:S1161":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ8€Â«•-
+Esquid:S1068"'Remove this unused "log" private field.(öˆé“8ùŒÔÉ•-
 Ksquid:S1989"-Add a "try/catch" block for "processRequest".(‘ŸÑ8€Â«•-
 {squid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¤ÉäÊûÿÿÿÿ8ÏÜÈ•-
 Ksquid:S1989"-Add a "try/catch" block for "processRequest".(‘ŸÑ8€Â«•-
+®%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(ıù±8º³Ï•-
+Ksquid:S1989"-Add a "try/catch" block for "processRequest".(‘ŸÑ8€Â«•-
+£%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ıù±8º³Ï•-
 Xsquid:S1161":Add the "@Override" annotation above this method signature(‹¨¯¿8€Â«•-
-Esquid:S1068"'Remove this unused "log" private field.(öˆé“8ùŒÔÉ•-
-]squid:S1161":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ8€Â«•-

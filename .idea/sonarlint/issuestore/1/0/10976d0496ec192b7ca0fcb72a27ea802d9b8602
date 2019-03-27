@@ -1,39 +1,48 @@
 
-qsquid:S00116"RRename this field "USER_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À™®ù8üœê˜–-
-squid:S00116"jRename this field "FIND_USER_BY_LOGIN_AND_PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÖş„ùÿÿÿÿ8Šó­á™-
-~squid:S00116"ZRename this field "FIND_USER_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÃ¹êúÿÿÿÿ8üœê˜–-
-?squid:S1170 "!Make this final field static too.(Õˆ8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(Û†Â‹ÿÿÿÿÿ8üœê˜–-
-?squid:S1170"!Make this final field static too.(ÁÕ¬»8üœê˜–-
-wsquid:S00116"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®îÿ´ıÿÿÿÿ8üœê˜–-
-osquid:S00116"PRename this field "EMAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÄõÉ8üœê˜–-
+Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8áîå­š-
 ssquid:S00116"ORename this field "ROLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğã³õùÿÿÿÿ8ê‚£™–-
-squid:S00116"]Rename this field "FIND_USER_BY_LOGIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³°Ôûÿÿÿÿ8ƒñ®á™-
-?squid:S1170"!Make this final field static too.(ÌÇ€8üœê˜–-
-Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8üœê˜–-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(œÃ¹êúÿÿÿÿ8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(‰µıÄşÿÿÿÿ8üœê˜–-
-V
-squid:S106b"9Replace this use of System.out or System.err by a logger.(äÃÎâ8üœê˜–-
-?squid:S1170#"!Make this final field static too.(ƒà‡•8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(ôÓ…¦ıÿÿÿÿ8üœê˜–-
-xsquid:S00116"TRename this field "LAST_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰µıÄşÿÿÿÿ8üœê˜–-
-{squid:S00116 "\Rename this field "DELETE_USER_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õˆ8üœê˜–-
-zsquid:S00116!"VRename this field "CREATE_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö•åÿÿÿÿÿ8üœê˜–-
-|squid:S00116"XRename this field "FIND_ALL_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÓ…¦ıÿÿÿÿ8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(âÖş„ùÿÿÿÿ8üœê˜–-
-ysquid:S00116"URename this field "FIRST_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û†Â‹ÿÿÿÿÿ8üœê˜–-
-ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(âÖş„ùÿÿÿÿ8üœê˜–-
-ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(®îÿ´ıÿÿÿÿ8üœê˜–-
-ksquid:S2095×"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Å¥Íóÿÿÿÿÿ8Üº«á™-
-?squid:S1170"!Make this final field static too.(óÄõÉ8üœê˜–-
-Dsquid:S1170"!Make this final field static too.(³°Ôûÿÿÿÿ8ƒñ®á™-
-Dsquid:S1170"!Make this final field static too.(®îÿ´ıÿÿÿÿ8üœê˜–-
-osquid:S00116"PRename this field "PHONE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÇ€8üœê˜–-
-qsquid:S00116"RRename this field "ADDRESS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÕ¬»8üœê˜–-
-usquid:S00116#"VRename this field "UPDATE_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒà‡•8üœê˜–-
-Dsquid:S1170!"!Make this final field static too.(Ö•åÿÿÿÿÿ8üœê˜–-
-ksquid:S2095º"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Å¥Íóÿÿÿÿÿ8üœê˜–-
-?squid:S1170"!Make this final field static too.(À™®ù8üœê˜–-
+Dsquid:S1170"!Make this final field static too.(Û†Â‹ÿÿÿÿÿ8üœê˜–-
+{squid:S00116"]Rename this field "DELETE_PUPIL_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ÿü)8‚˜Ê›-
+squid:S00116!"jRename this field "FIND_USER_BY_LOGIN_AND_PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÖş„ùÿÿÿÿ8Šó­á™-
+ksquid:S2095Á"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Å¥Íóÿÿÿÿÿ8üœê˜–-
+wsquid:S00116"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®îÿ´ıÿÿÿÿ8üœê˜–-
+ksquid:S2095Ş"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Å¥Íóÿÿÿÿÿ8Üº«á™-
+zsquid:S00116("VRename this field "CREATE_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö•åÿÿÿÿÿ8üœê˜–-
+Dsquid:S1170"!Make this final field static too.(ëø“•ùÿÿÿÿ8â»­÷š-
+usquid:S00116*"VRename this field "UPDATE_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒà‡•8üœê˜–-
 Dsquid:S1170"!Make this final field static too.(ğã³õùÿÿÿÿ8ê‚£™–-
+Dsquid:S1170"!Make this final field static too.(ÂÅøÿÿÿÿ8«È›­›-
+²squid:S1192"Define a constant instead of duplicating this literal "SELECT user_id, first_name, last_name, email, phone, address, password, role " 3 times.(ëø“•ùÿÿÿÿ8â»­÷š-
+Dsquid:S1170%"!Make this final field static too.(œÃ¹êúÿÿÿÿ8üœê˜–-
+?squid:S1170"!Make this final field static too.(Şùƒì8½¬óùš-
+qsquid:S00116"RRename this field "ADDRESS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÕ¬»8üœê˜–-
+ysquid:S00116"URename this field "FIRST_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û†Â‹ÿÿÿÿÿ8üœê˜–-
+squid:S00116"[Rename this field "FIND_ALL_TEACHER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëø“•ùÿÿÿÿ8â»­÷š-
+~squid:S00116%"ZRename this field "FIND_USER_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÃ¹êúÿÿÿÿ8üœê˜–-
+}squid:S00116"^Rename this field "FIND_CLAS_ALL_PUPIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şùƒì8İùàûš-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8áîå­š-
+V
+squid:S106i"9Replace this use of System.out or System.err by a logger.(äÃÎâ8üœê˜–-
+Dsquid:S1170"!Make this final field static too.(‰µıÄşÿÿÿÿ8üœê˜–-
+?squid:S1170"!Make this final field static too.(ÌÇ€8üœê˜–-
+osquid:S00116"PRename this field "EMAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÄõÉ8üœê˜–-
+Dsquid:S1170("!Make this final field static too.(Ö•åÿÿÿÿÿ8üœê˜–-
+?squid:S1170"!Make this final field static too.(óÄõÉ8üœê˜–-
+{squid:S00116'"\Rename this field "DELETE_USER_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õˆ8üœê˜–-
+Dsquid:S1170#"!Make this final field static too.(ôÓ…¦ıÿÿÿÿ8üœê˜–-
+?squid:S1170*"!Make this final field static too.(ƒà‡•8üœê˜–-
+squid:S00116"]Rename this field "FIND_USER_BY_LOGIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³°Ôûÿÿÿÿ8ƒñ®á™-
+xsquid:S00116"TRename this field "LAST_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰µıÄşÿÿÿÿ8üœê˜–-
+ysquid:S2068!"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(âÖş„ùÿÿÿÿ8üœê˜–-
+osquid:S00116"PRename this field "PHONE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÇ€8üœê˜–-
+ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(®îÿ´ıÿÿÿÿ8üœê˜–-
+Dsquid:S1170"!Make this final field static too.(®îÿ´ıÿÿÿÿ8üœê˜–-
+>squid:S1170"!Make this final field static too.(£Ÿü)8‚˜Ê›-
+|squid:S00116#"XRename this field "FIND_ALL_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÓ…¦ıÿÿÿÿ8üœê˜–-
+?squid:S1170"!Make this final field static too.(À™®ù8üœê˜–-
+?squid:S1170'"!Make this final field static too.(Õˆ8üœê˜–-
+qsquid:S00116"RRename this field "USER_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À™®ù8üœê˜–-
+Dsquid:S1170"!Make this final field static too.(³°Ôûÿÿÿÿ8ƒñ®á™-
+squid:S00116"]Rename this field "ADD_PUPIL_TO_CLASS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÅøÿÿÿÿ8Ã§­›-
+?squid:S1170"!Make this final field static too.(ÁÕ¬»8üœê˜–-
+Dsquid:S1170!"!Make this final field static too.(âÖş„ùÿÿÿÿ8üœê˜–-

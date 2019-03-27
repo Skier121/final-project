@@ -1,4 +1,4 @@
 
-ksquid:S1192 "HDefine a constant instead of duplicating this literal "command" 3 times.(“Æéõüÿÿÿÿ8Á…Œº–-
-isquid:UselessImportCheck">Remove this unused import 'by.baranov.webproject.entity.User'.(ËÙà8ÒÚ‹ì–-
 usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßï¹íÿÿÿÿÿ
+isquid:UselessImportCheck">Remove this unused import 'by.baranov.webproject.entity.User'.(ËÙà8ÒÚ‹ì–-
+ksquid:S1192!"HDefine a constant instead of duplicating this literal "command" 3 times.(“Æéõüÿÿÿÿ8Á…Œº–-

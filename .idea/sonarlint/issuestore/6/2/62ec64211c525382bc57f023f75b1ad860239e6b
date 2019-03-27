@@ -1,6 +1,9 @@
 
-jjavascript:UnusedVariable%"9Remove the declaration of the unused 'tdupdate' variable.(›ƒİşÿÿÿÿ8“—ÄÕ™-
-gjavascript:UnusedVariable";Remove the declaration of the unused 'showPupils' variable.(˜ÿ„8¬ºÊÕ™-
-`javascript:S1854"=Remove this useless assignment to local variable "showPupils"(˜ÿ„8¬ºÊÕ™-
-cjavascript:S1854%";Remove this useless assignment to local variable "tdupdate"(›ƒİşÿÿÿÿ8“—ÄÕ™-
+Jjavascript:S1442""Remove this usage of confirm(...).(ª¶ºäûÿÿÿÿ8Û–û¥›-
 Jjavascript:S1442""Remove this usage of confirm(...).(ª¶ºäûÿÿÿÿ8“—ÄÕ™-
+jjavascript:UnusedVariable1"9Remove the declaration of the unused 'tdupdate' variable.(›ƒİşÿÿÿÿ8ïïî¦›-
+cjavascript:S18541";Remove this useless assignment to local variable "tdupdate"(›ƒİşÿÿÿÿ8ïïî¦›-
+fjavascript:S1854">Remove this useless assignment to local variable "deleteClass"(Ù½üùÿÿÿÿ8Æ²°¥›-
+\javascript:S1854B":Remove this useless assignment to local variable "$select"(¬Šƒ8ïïî¦›-
+cjavascript:UnusedVariableB"8Remove the declaration of the unused '$select' variable.(¬Šƒ8ïïî¦›-
+mjavascript:UnusedVariable"<Remove the declaration of the unused 'deleteClass' variable.(Ù½üùÿÿÿÿ8Æ²°¥›-

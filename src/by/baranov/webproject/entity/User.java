@@ -102,7 +102,7 @@ public class User extends Entity implements Serializable {
     @Override
     public String toString() {
         return "{" +
-                "  \"userId\":" + userId +
+                "  \"userId\":\"" + userId + "\"" +
                 ", \"firstName\":\"" + firstName + "\"" +
                 ", \"lastName\":\"" + lastName + "\"" +
                 ", \"email\":\"" + email + "\"" +

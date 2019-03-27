@@ -1,6 +1,12 @@
 $(document).ready(() => {
     const beginLesson = (lessonId)=>{
-        window.location.htef="/WEB-INF/jsp/lesson.jsp"
+        if (confirm("Really?")) {
+            $.ajax({
+                url: "/test/controller",
+                method: "GET",
+                data: {command: "beginLesson", lessonId: lessonId},
+            })
+        }
     };
 
     const showLessons = () => {

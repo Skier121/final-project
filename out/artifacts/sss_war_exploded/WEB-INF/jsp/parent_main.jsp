@@ -26,13 +26,32 @@
     </tr>
     <tr>
         <td class="main">
-            <table id="lessons">
+            <label>
+                <fmt:message key="parent.table.timetable" bundle="${page_content}"/>
+            </label>
+            <table id="timetable">
                 <thead>
                 <tr>
-                    <th>#</th>
-                    <th><fmt:message key="teacher.lessons.table.lessonNumber" bundle="${page_content}"/></th>
-                    <th><fmt:message key="teacher.lessons.table.lessonName" bundle="${page_content}"/></th>
-                    <th><fmt:message key="teacher.lessons.table.className" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.date" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.lessonNumber" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.subjectName" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.homework" bundle="${page_content}"/></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <br>
+            <label>
+                <fmt:message key="parent.table.marks" bundle="${page_content}"/>
+            </label>
+            <table id="marks">
+                <thead>
+                <tr>
+                    <th><fmt:message key="parent.table.marks.date" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.marks.subjectName" bundle="${page_content}"/></th>
+                    <th><fmt:message key="parent.table.marks.mark" bundle="${page_content}"/></th>
                 </tr>
                 </thead>
                 <tbody>

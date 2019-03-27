@@ -1,19 +1,19 @@
 
 wsquid:S00116"XRename this field "FIND_ALL_CLAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ²¿Ø8Ö‹˜ğ–-
->squid:S1170"!Make this final field static too.(É‘.8Ëñàì–-
-usquid:S00116"VRename this field "UPDATE_CLAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÏ…¼8½è™ğ–-
+?squid:S1170"!Make this final field static too.(ÕÏ…¼8Ëñàì–-
 ?squid:S1170"!Make this final field static too.(İ²¿Ø8Ëñàì–-
-Dsquid:S1170"!Make this final field static too.(¹Éª¤ùÿÿÿÿ8Ëñàì–-
-Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8Ëñàì–-
->squid:S1170"!Make this final field static too.(…˜åJ8Ëñàì–-
-xsquid:S00116"TRename this field "CLAS_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¨ãûÿÿÿÿ8¤ÿ–ğ–-
-zsquid:S00116"\Rename this field "DELETE_CLAS_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—â¢t8Í‘™ğ–-
 psquid:S00116"RRename this field "CLAS_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…˜åJ8¹†–ğ–-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8Ëñàì–-
-~squid:S00116"ZRename this field "FIND_CLAS_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Éª¤ùÿÿÿÿ8Ù˜ğ–-
->squid:S1170"!Make this final field static too.(—â¢t8Ëñàì–-
 tsquid:S00116"VRename this field "CREATE_CLAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É‘.8½è™ğ–-
+Dsquid:S1170"!Make this final field static too.(¹Éª¤ùÿÿÿÿ8Ëñàì–-
+usquid:S00116"VRename this field "UPDATE_CLAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÏ…¼8½è™ğ–-
 V
 squid:S106?"9Replace this use of System.out or System.err by a logger.(äÃÎâ8öÉ‡í–-
-?squid:S1170"!Make this final field static too.(ÕÏ…¼8Ëñàì–-
 Dsquid:S1170"!Make this final field static too.(—¨ãûÿÿÿÿ8Ëñàì–-
+>squid:S1170"!Make this final field static too.(…˜åJ8Ëñàì–-
+xsquid:S00116"TRename this field "CLAS_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¨ãûÿÿÿÿ8¤ÿ–ğ–-
+Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8Ëñàì–-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8Ëñàì–-
+~squid:S00116"ZRename this field "FIND_CLAS_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Éª¤ùÿÿÿÿ8Ù˜ğ–-
+>squid:S1170"!Make this final field static too.(É‘.8Ëñàì–-
+zsquid:S00116"\Rename this field "DELETE_CLAS_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—â¢t8Í‘™ğ–-
+>squid:S1170"!Make this final field static too.(—â¢t8Ëñàì–-

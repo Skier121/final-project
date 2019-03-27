@@ -3,6 +3,8 @@ package by.baranov.webproject.dao.impl;
 import by.baranov.webproject.dao.AbstractDao;
 import by.baranov.webproject.dao.DaoException;
 import by.baranov.webproject.dto.LessonDto;
+import by.baranov.webproject.dto.MarkDto;
+import by.baranov.webproject.dto.TimetableAndHomeworkDto;
 import by.baranov.webproject.entity.Subject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +15,10 @@ import java.util.List;
 
 public class SubjectDaoImpl extends AbstractDao<Subject> {
     private final static Logger log = LogManager.getLogger();
+    private final String TIMETABLE_DATE = "timetable.date";
+    private final String HOMEWORK = "homework.data";
+    private final String MARKS_DATE = "marks.date";
+    private final String MARKS_MARK = "marks.mark";
     private final String TIMETABLE_LESSSON_ID = "timetable.lesson_id";
     private final String SUBJECT_SUBJECT_NAME = "subject.subject_name";
     private final String TIMETABLE_CLASS_NAME = "timetable.class_name";
@@ -20,9 +26,34 @@ public class SubjectDaoImpl extends AbstractDao<Subject> {
     private final String SUBJECT_ID = "subject_id";
     private final String SUBJECT_NAME = "subject_name";
     private final String TEACHER_ID = "teacher_id";
-    private final String FIND_ALL_TEACHER_SUBJECT = "SELECT timetable.lesson_id, subject.subject_name, timetable.class_name, " +
-            "timetable.lesson_number FROM timetable JOIN subject ON timetable.subject_id = subject.subject_id" +
-            " WHERE timetable.subject_id IN (SELECT subject_id FROM subject WHERE teacher_id = ?) AND date = ? " +
+    private final String FIND_ALL_LESSON_AND_HOMEWORK =
+            "SELECT timetable.date, subject.subject_name, timetable.lesson_number, homework.data " +
+            "FROM timetable " +
+            "JOIN subject ON timetable.subject_id = subject.subject_id " +
+            "JOIN homework ON timetable.subject_id = homework.subject_id "+
+            "WHERE timetable.class_name IN " +
+            "(SELECT pupil.class_name " +
+            "FROM pupil " +
+            "WHERE pupil.user_id IN " +
+            "(SELECT parent.pupil_user_id " +
+            "FROM parent " +
+            "WHERE parent.parent_user_id = ?))";
+    private final String FIND_ALL_MARKS =
+            "SELECT marks.date, subject.subject_name, marks.mark " +
+            "FROM marks " +
+            "JOIN subject ON marks.subject_id = subject.subject_id " +
+            "WHERE marks.user_id IN " +
+            "(SELECT parent.pupil_user_id " +
+            "FROM parent " +
+            "WHERE parent.parent_user_id = ?)";
+    private final String FIND_ALL_TEACHER_SUBJECT =
+            "SELECT timetable.lesson_id, subject.subject_name, timetable.class_name, timetable.lesson_number " +
+            "FROM timetable " +
+            "JOIN subject ON timetable.subject_id = subject.subject_id " +
+            "WHERE timetable.subject_id IN " +
+            "(SELECT subject_id " +
+            "FROM subject " +
+            "WHERE teacher_id = ?) AND date = ? " +
             "AND timetable.completed = 0";
     private final String FIND_ALL_SUBJECT = "SELECT subject_id, subject_name, teacher_id FROM subject";
     private final String FIND_SUBJECT_BY_ID = "SELECT subject_id, subject_name, teacher_id FROM subject WHERE subject_id = ?";
@@ -158,6 +189,57 @@ public class SubjectDaoImpl extends AbstractDao<Subject> {
                 String subjectName = resultSet.getString(SUBJECT_SUBJECT_NAME);
                 String className = resultSet.getString(TIMETABLE_CLASS_NAME);
                 resultList.add(new LessonDto(lessonId, lessonNumber, subjectName, className));
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(resultSet, preparedStatement, connection);
+        }
+        return resultList;
+    }
+
+    public List<MarkDto> findAllMarks(long parentId) throws DaoException {
+        List<MarkDto> resultList = new ArrayList<>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(FIND_ALL_MARKS);
+            preparedStatement.setLong(1, parentId);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Date date = resultSet.getDate(MARKS_DATE);
+                String subjectName = resultSet.getString(SUBJECT_SUBJECT_NAME);
+                int mark = resultSet.getInt(MARKS_MARK);
+                resultList.add(new MarkDto(date, subjectName, mark));
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(resultSet, preparedStatement, connection);
+        }
+        return resultList;
+    }
+
+    public List<TimetableAndHomeworkDto> findAllLessonAndHomework(long parentId) throws DaoException {
+        List<TimetableAndHomeworkDto> resultList = new ArrayList<>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(FIND_ALL_LESSON_AND_HOMEWORK);
+            preparedStatement.setLong(1, parentId);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Date date = resultSet.getDate(TIMETABLE_DATE);
+                int lessonNumber = resultSet.getInt(TIMETABLE_LESSON_NUMBER);
+                String subjectName = resultSet.getString(SUBJECT_SUBJECT_NAME);
+                String homework = resultSet.getString(HOMEWORK);
+                resultList.add(new TimetableAndHomeworkDto(date, lessonNumber, subjectName, homework));
             }
         } catch (SQLException e) {
             throw new DaoException(e);
