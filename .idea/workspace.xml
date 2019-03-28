@@ -7,12 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24bcf410-ffc1-48b9-b9f5-c7f02eec95c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/ProfileCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dto/MarkDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dto/TimetableAndHomeworkDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllLessonsAndHomeworkCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllMarksCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindUserDataCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/NewPasswordCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateUserDataCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/css/parent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/profile.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/js/parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c2fbcd2-9802-4ec4-b2de-1486f72c51f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c2fbcd2-9802-4ec4-b2de-1486f72c51f4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a9ce1e889722ecbba2a686c56ea39f4330f0b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a9ce1e889722ecbba2a686c56ea39f4330f0b3f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10976d0496ec192b7ca0fcb72a27ea802d9b8602" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10976d0496ec192b7ca0fcb72a27ea802d9b8602" afterDir="false" />
@@ -21,22 +27,31 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/dao/impl/UserDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/JsonRequestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/JsonRequestHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/RequestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/by/baranov/webproject/util/RequestHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/classes/resources/l18n/page_content_ru.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/jsp/parent_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/jsp/parent_main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/WEB-INF/jsp/pupil_main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/form/userForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/form/userForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/header/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sss_war_exploded/header/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/resources/l18n/page_content_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources/l18n/page_content_ru.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/SubjectDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/SubjectDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/dto/LessonDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/dto/LessonDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/pupil_main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/pupil_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/form/userForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/form/userForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/header/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header/header.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +99,7 @@
         <item name="web_project@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="web_project: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="timetable: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -93,46 +108,28 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties">
-          <provider selected="true" editor-type-id="ResourceBundle" />
           <provider editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="ResourceBundle" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+            <state relative-caret-position="1360">
+              <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dto/TimetableAndHomeworkDto.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding>
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1086#1087#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -195,15 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/RecoverPasswordCommand.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/entity/Subject.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateSubjectCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllSubjectCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateSubjectCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeleteSubjectCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminSubjectAndTeacher.jsp" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllTeacherCommand.java" />
         <option value="$PROJECT_DIR$/web/js/adminSubjectAndTeacher.js" />
         <option value="$PROJECT_DIR$/web/css/adminClass.css" />
@@ -219,15 +207,12 @@
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LoginCommand.java" />
         <option value="$PROJECT_DIR$/web/js/adminClasses.js" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeletePupil.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllTeacherSubject.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllTeacherSubjectCommand.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/teacher_main.jsp" />
         <option value="$PROJECT_DIR$/web/css/lesson.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/lesson.jsp" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LessonCommand.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/controller/Controller.java" />
         <option value="$PROJECT_DIR$/web/css/parent.css" />
         <option value="$PROJECT_DIR$/web/js/teacher.js" />
@@ -237,15 +222,27 @@
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/dto/LessonDto.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/dto/MarkDto.java" />
-        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/dto/TimetableAndHomeworkDto.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllLessonsAndHomeworkCommand.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/SubjectService.java" />
         <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/SubjectDaoImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/web/js/parent.js" />
-        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp" />
+        <option value="$PROJECT_DIR$/web/header/header.jsp" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/command/impl/ProfileCommand.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/web/css/profile.css" />
+        <option value="$PROJECT_DIR$/web/form/userForm.jsp" />
+        <option value="$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateUserDataCommand.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/NewPasswordCommand.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindUserDataCommand.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java" />
+        <option value="$PROJECT_DIR$/web/js/profile.js" />
       </list>
     </option>
   </component>
@@ -317,58 +314,13 @@
             <path>
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="jsoncommand" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="jsoncommand" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webproject" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="sss" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
@@ -419,10 +371,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553699856165" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553767488380" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="jsx.switch.disabled" value="true" />
@@ -612,7 +565,9 @@
       <workItem from="1552467353391" duration="3271000" />
       <workItem from="1552561216997" duration="31090000" />
       <workItem from="1553242741482" duration="91086000" />
-      <workItem from="1553678566460" duration="13779000" />
+      <workItem from="1553678566460" duration="21818000" />
+      <workItem from="1553768219084" duration="698000" />
+      <workItem from="1553769950436" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1553427998131</created>
@@ -632,7 +587,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431292000" />
+    <option name="totallyTimeSpent" value="440622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,8 +602,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6881188" visible="true" weight="0.2579425" />
-      <window_info id="Structure" order="1" sideWeight="0.31188118" side_tool="true" visible="true" weight="0.2579425" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6841244" visible="true" weight="0.2655068" />
+      <window_info id="Structure" order="1" sideWeight="0.31587562" side_tool="true" visible="true" weight="0.2655068" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -658,7 +613,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33878887" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33878887" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -753,136 +708,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="61" column="95" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2c2fbcd2-9802-4ec4-b2de-1486f72c51f4/schema/web_project/table/clas">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/ClassDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/CreateUserCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeleteUserCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/adminClasses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/DeletePupilCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllTeacherCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllSubjectCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2c2fbcd2-9802-4ec4-b2de-1486f72c51f4/schema/web_project/table/subject">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/adminClasses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="105" column="7" lean-forward="true" selection-start-line="19" selection-end-line="105" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllTeacherSubjectCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/adminUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="24" column="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/lesson.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/controller/JsonServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -900,37 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LessonCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1381">
-          <caret line="322" column="72" selection-start-line="322" selection-start-column="72" selection-end-line="322" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1006,20 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/lesson.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/lesson.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1066,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="41" column="90" selection-start-line="41" selection-start-column="90" selection-end-line="41" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllMarksCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1116,16 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="148" column="37" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/SubjectService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1160,6 +924,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/parent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LessonCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/LogoutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/command/impl/ProfileCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/RequestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="80" lean-forward="true" selection-start-line="7" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/adminUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="20" column="26" selection-end-line="90" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dto/TimetableAndHomeworkDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1185,25 +1025,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/parent.js">
+    <entry file="file://$PROJECT_DIR$/web/form/pupilForm.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="408">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/userForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateUserCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/UpdateUserDataCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/NewPasswordCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindAllUsersCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/jsoncommand/impl/FindUserDataCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/baranov/webproject/util/JsonRequestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="67" lean-forward="true" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/resources/l18n/page_content_en.properties">
-      <provider selected="true" editor-type-id="ResourceBundle" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="ResourceBundle" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/parent_main.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/profile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/lesson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/lesson.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>

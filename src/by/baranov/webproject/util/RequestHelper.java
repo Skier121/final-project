@@ -27,6 +27,7 @@ public class RequestHelper {
         commands.put("users", new UsersCommand());
         commands.put("passwordRecovery", new PasswordRecoveryCommand());
         commands.put("beginLesson", new LessonCommand());
+        commands.put("profile", new ProfileCommand());
     }
 
     public Command getCommand(HttpServletRequest request) {

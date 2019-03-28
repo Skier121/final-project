@@ -21,6 +21,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     private final String ADDRESS = "address";
     private final String PASSWORD = "password";
     private final String ROLE = "role";
+    private final String UPDATE_USER_PASSWORD = "UPDATE user SET password = ? WHERE user_id = ?";
     private final String DELETE_PUPIL_BY_ID = "DELETE FROM pupil WHERE user_id = ?";
     private final String ADD_PUPIL_TO_CLASS = "INSERT INTO pupil SET user_id = ?, class_name = ?";
     private final String FIND_CLAS_ALL_PUPIL = "SELECT user.user_id, user.first_name, user.last_name, user.email, " +
@@ -322,6 +323,25 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             connection = getConnectionPool().getConnection();
             preparedStatement = connection.prepareStatement(DELETE_PUPIL_BY_ID);
             preparedStatement.setLong(1, id);
+            preparedStatement.executeUpdate();
+            result = true;
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            releaseResources(preparedStatement, connection);
+        }
+        return result;
+    }
+
+    public boolean updatePassword(long userId, String password) throws DaoException {
+        boolean result = false;
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = getConnectionPool().getConnection();
+            preparedStatement = connection.prepareStatement(UPDATE_USER);
+            preparedStatement.setString(1, password);
+            preparedStatement.setLong(2, userId);
             preparedStatement.executeUpdate();
             result = true;
         } catch (SQLException e) {

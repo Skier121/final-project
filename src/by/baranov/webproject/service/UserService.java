@@ -15,7 +15,7 @@ public class UserService {
     private static final Logger log= LogManager.getLogger();
     private final static String PUPIL="PUPIL";
 
-    public static User findUserById(int id) throws ServiceException{
+    public static User findUserById(long id) throws ServiceException{
         UserDaoImpl userDaoImpl =new UserDaoImpl();
         User user=null;
         try {
@@ -151,6 +151,18 @@ public class UserService {
         UserDaoImpl userDao= new UserDaoImpl();
         try{
             result=userDao.deletePupil(pupilId);
+        }catch (DaoException e){
+            throw new ServiceException(e);
+        }
+        return result;
+    }
+
+    public static boolean updateUserPassword(long id, String password) throws ServiceException{
+        boolean result=false;
+        UserDaoImpl userDao= new UserDaoImpl();
+        String hashedPassword=PasswordHash.doHashForPassword(password);
+        try{
+            result=userDao.updatePassword(id, hashedPassword);
         }catch (DaoException e){
             throw new ServiceException(e);
         }

@@ -1,32 +1,46 @@
 
-~squid:S00116"_Rename this field "TIMETABLE_LESSSON_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¼‘¨8öğèÍ›-
-Dsquid:S1170"!Make this final field static too.(Şø‰Œúÿÿÿÿ8ÛÓè­š-
-}squid:S00116"_Rename this field "SUBJECT_SUBJECT_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ø¸h8ïÎªÌ›-
-?squid:S1170"!Make this final field static too.(”ï®Ô8ÛÓè­š-
-tsquid:S00116"URename this field "TEACHER_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¹©8›œÛ®š-
-Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8ÛÓè­š-
-zsquid:S00116"[Rename this field "FIND_ALL_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¤÷›8ªËİ®š-
-xsquid:S00116"YRename this field "UPDATE_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ï®Ô8±»³¯š-
-?squid:S1170"!Make this final field static too.(®¼‘¨8š«çÍ›-
-}squid:S00116"YRename this field "CREATE_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¨™¬ıÿÿÿÿ8ôá¯¯š-
-Dsquid:S1170"!Make this final field static too.(‡¨™¬ıÿÿÿÿ8ÛÓè­š-
-ƒsquid:S00116"_Rename this field "TIMETABLE_CLASS_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ‘ò¬ÿÿÿÿÿ8¸Æ÷Ç›-
-?squid:S1170"!Make this final field static too.(Ò¤÷›8ÛÓè­š-
-squid:S00116"]Rename this field "FIND_SUBJECT_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ĞÍşÿÿÿÿ8‘Ü‚¯š-
->squid:S1170"!Make this final field static too.(ú“«"8­ü¡Ç›-
-?squid:S1170"!Make this final field static too.(¸¹©8ÛÓè­š-
-Dsquid:S1170"!Make this final field static too.(ãóı³úÿÿÿÿ8ÛÓè­š-
-?squid:S1170"!Make this final field static too.(ïïÒ8³‚ûÇ›-
-Dsquid:S1170"!Make this final field static too.(ğ‘ò¬ÿÿÿÿÿ8¸Æ÷Ç›-
-{squid:S00116"WRename this field "SUBJECT_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãóı³úÿÿÿÿ8‹¬Ù®š-
-squid:S00116"cRename this field "FIND_ALL_TEACHER_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú“«"8­ü¡Ç›-
-Dsquid:S1170"!Make this final field static too.(‹ĞÍşÿÿÿÿ8ÛÓè­š-
-squid:S00116"bRename this field "TIMETABLE_LESSON_NUMBER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïïÒ8³‚ûÇ›-
-ƒsquid:S00116"_Rename this field "DELETE_SUBJECT_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şø‰Œúÿÿÿÿ8èœ®¯š-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8ÛÓè­š-
->squid:S1170"!Make this final field static too.(³ø¸h8ñåÇ›-
 V
-squid:S106K"9Replace this use of System.out or System.err by a logger.(äÃÎâ8ÛÓè­š-
-Dsquid:S1170"!Make this final field static too.(‹˜ï·øÿÿÿÿ8ÛÓè­š-
-ysquid:S00116"URename this field "SUBJECT_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹˜ï·øÿÿÿÿ8¬ÇÊ®š-
-Rsquid:S1481’".Remove this unused "statement" local variable.(éÃ¢Ïıÿÿÿÿ8™à—È›-
+squid:S106j"9Replace this use of System.out or System.err by a logger.(äÃÎâ8œ¸­ô›-
+ysquid:S00116"URename this field "SUBJECT_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹˜ï·øÿÿÿÿ8¬ÇÊ®š-
+ƒsquid:S00116<"_Rename this field "DELETE_SUBJECT_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şø‰Œúÿÿÿÿ8èœ®¯š-
+Dsquid:S1170="!Make this final field static too.(‡¨™¬ıÿÿÿÿ8ÛÓè­š-
+>squid:S1170"!Make this final field static too.(³ø¸h8ñåÇ›-
+squid:S00116;"]Rename this field "FIND_SUBJECT_BY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ĞÍşÿÿÿÿ8‘Ü‚¯š-
+Rsquid:S1481±".Remove this unused "statement" local variable.(éÃ¢Ïıÿÿÿÿ8œ¸­ô›-
+xsquid:S00116)"YRename this field "FIND_ALL_MARKS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã»ä8œ¸­ô›-
+?squid:S1170)"!Make this final field static too.(Ã»ä8œ¸­ô›-
+?squid:S11701"!Make this final field static too.(×Ì ğ8œ¸­ô›-
+qsquid:S00116"SRename this field "HOMEWORK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éä·A8´ïÎû›-
+Dsquid:S1170<"!Make this final field static too.(Şø‰Œúÿÿÿÿ8ÛÓè­š-
+Dsquid:S1170"!Make this final field static too.(‹˜ï·øÿÿÿÿ8ÛÓè­š-
+‚squid:S001161"cRename this field "FIND_ALL_TEACHER_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ì ğ8œ¸­ô›-
+xsquid:S00116>"YRename this field "UPDATE_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ï®Ô8œ¸­ô›-
+Dsquid:S1170"!Make this final field static too.(ğ‘ò¬ÿÿÿÿÿ8¸Æ÷Ç›-
+Dsquid:S1170"!Make this final field static too.(ãóı³úÿÿÿÿ8ÛÓè­š-
+squid:S00116"bRename this field "TIMETABLE_LESSON_NUMBER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïïÒ8³‚ûÇ›-
+Rsquid:S1481Ì".Remove this unused "statement" local variable.(éÃ¢Ïıÿÿÿÿ8œ¸­ô›-
+Dsquid:S1170;"!Make this final field static too.(‹ĞÍşÿÿÿÿ8ÛÓè­š-
+†squid:S00116"gRename this field "FIND_ALL_LESSON_AND_HOMEWORK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³‘öˆ8¥”Âû›-
+?squid:S1170>"!Make this final field static too.(”ï®Ô8œ¸­ô›-
+tsquid:S00116"URename this field "TEACHER_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¹©8›œÛ®š-
+?squid:S1170"!Make this final field static too.(ÎĞÃ¡8ãÕŠõ›-
+ƒsquid:S00116"_Rename this field "TIMETABLE_CLASS_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ‘ò¬ÿÿÿÿÿ8¸Æ÷Ç›-
+}squid:S00116"_Rename this field "SUBJECT_SUBJECT_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ø¸h8ïÎªÌ›-
+Esquid:S1068"'Remove this unused "log" private field.(˜Øå³8œ¸­ô›-
+?squid:S1170"!Make this final field static too.(³‘öˆ8¥”Âû›-
+~squid:S00116"_Rename this field "TIMETABLE_LESSSON_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¼‘¨8öğèÍ›-
+zsquid:S00116:"[Rename this field "FIND_ALL_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¤÷›8ªËİ®š-
+Dsquid:S1170"!Make this final field static too.(äÁÛ‰şÿÿÿÿ8óœâü›-
+?squid:S1170"!Make this final field static too.(®¼‘¨8š«çÍ›-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Øå³8œ¸­ô›-
+?squid:S1170"!Make this final field static too.(­öÖû8ğ¿€õ›-
+tsquid:S00116"URename this field "MARKS_MARK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎĞÃ¡8ãÕŠõ›-
+Rsquid:S1481å".Remove this unused "statement" local variable.(éÃ¢Ïıÿÿÿÿ8²ç¹û›-
+>squid:S1170"!Make this final field static too.(éä·A8´ïÎû›-
+?squid:S1170"!Make this final field static too.(ïïÒ8³‚ûÇ›-
+}squid:S00116"YRename this field "TIMETABLE_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÁÛ‰şÿÿÿÿ8óœâü›-
+tsquid:S00116"URename this field "MARKS_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öÖû8ğ¿€õ›-
+{squid:S00116"WRename this field "SUBJECT_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãóı³úÿÿÿÿ8‹¬Ù®š-
+}squid:S00116="YRename this field "CREATE_SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¨™¬ıÿÿÿÿ8ôá¯¯š-
+?squid:S1170"!Make this final field static too.(¸¹©8ÛÓè­š-
+?squid:S1170:"!Make this final field static too.(Ò¤÷›8ÛÓè­š-

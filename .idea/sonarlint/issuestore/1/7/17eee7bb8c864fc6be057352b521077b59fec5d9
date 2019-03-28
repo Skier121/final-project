@@ -1,5 +1,5 @@
 
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ì½Ð¹ýÿÿÿÿ8ïæ•®›-
 Xsquid:S1118":Add a private constructor to hide the implicit public one.(ÔÄëª8¦¢ý¬›-
 ‰squid:S2178e"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(¤Í›ÿûÿÿÿÿ8†êÖ†š-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ì½Ð¹ýÿÿÿÿ8ïæ•®›-
 Esquid:S1068"'Remove this unused "log" private field.(öˆé“8‚¾™Ž•-

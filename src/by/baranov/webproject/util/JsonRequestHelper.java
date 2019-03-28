@@ -40,6 +40,9 @@ public class JsonRequestHelper {
         commands.put("findAllTeacherSubject", new FindAllTeacherSubjectCommand());
         commands.put("findAllMarks", new FindAllMarksCommand());
         commands.put("findAllLessonsAndHomework", new FindAllLessonsAndHomeworkCommand());
+        commands.put("newPassword", new NewPasswordCommand());
+        commands.put("updateUserData", new UpdateUserDataCommand());
+        commands.put("findUserData", new FindUserDataCommand());
     }
 
     public JsonCommand getCommand(HttpServletRequest request) {

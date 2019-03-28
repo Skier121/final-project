@@ -16,7 +16,13 @@
 <span>Hello <%=user.getFirstName()%> <%=user.getLastName()%></span>
 <form id="logout" style="display: inline">
     <input type="hidden" name="command" value="logout"/>
-    <input type="submit" value="logout" formmethod="post" formaction="controller">
+    <input type="submit"
+           value="<fmt:message key="logout" bundle="${page_content}"/>" formmethod="post" formaction="controller">
+</form>
+<form id="profile" style="display: inline">
+    <input type="hidden" name="command" value="profile"/>
+    <input type="submit"
+           value="<fmt:message key="profile" bundle="${page_content}"/>" formmethod="post" formaction="controller">
 </form>
 <%
     }
